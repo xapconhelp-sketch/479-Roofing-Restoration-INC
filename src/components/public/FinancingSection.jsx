@@ -23,7 +23,7 @@ const FinancingSection = () => {
                         </div>
                         <h2 className="financing-headline">Investing in Your Home&apos;s Future.</h2>
                         <p className="financing-text">
-                            We believe premium protection should be accessible. SkyShape is currently finalizing partnerships with top-tier financial institutions to bring you flexible, low-interest payment plans.
+                            We believe premium protection should be accessible. 479 Roofing Restoration is currently finalizing partnerships with top-tier financial institutions to bring you flexible, low-interest payment plans.
                         </p>
                         <p className="financing-note">
                             Comprehensive financing options will be available very soon.

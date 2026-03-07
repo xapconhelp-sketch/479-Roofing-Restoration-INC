@@ -48,7 +48,7 @@
 .specialties-heading span {
     display: block;
     font-size: 1rem;
-    color: #007BFF;
+    color: #27A844;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -137,7 +137,7 @@
 }
 
 .specialty-icon {
-    color: #007BFF;
+    color: #27A844;
     width: 32px;
     height: 32px;
     stroke-width: 2px;

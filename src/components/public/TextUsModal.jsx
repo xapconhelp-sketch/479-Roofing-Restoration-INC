@@ -35,7 +35,7 @@ const TextUsModal = ({ isOpen, onClose, isEmbedded = false }) => {
         const encodedBody = encodeURIComponent(messageBody);
 
         // Open SMS app
-        window.location.href = `sms:+17045848280?body=${encodedBody}`;
+        window.location.href = `sms:+14792282193?body=${encodedBody}`;
 
         if (onClose) onClose();
     };
@@ -46,7 +46,7 @@ const TextUsModal = ({ isOpen, onClose, isEmbedded = false }) => {
             {/* Logo Section for Embedded View */}
             {isEmbedded && (
                 <div className="modal-logo-header">
-                    <img src="/logo-factorizado.jpg" alt="SkyShape Roofing" className="modal-top-logo" />
+                    <img src="/Recurso1.png" alt="479 Roofing Restoration" className="modal-top-logo" />
                 </div>
             )}
 
@@ -154,7 +154,7 @@ const TextUsModal = ({ isOpen, onClose, isEmbedded = false }) => {
             <div className="text-us-modal" onClick={(e) => e.stopPropagation()}>
                 {/* Fallback header for non-embedded view */}
                 <div className="text-us-header">
-                    <img src="/logo-scrolled.png" alt="Skyshape Roofing Logo" className="text-us-logo" />
+                    <img src="/Recurso1.png" alt="479 Roofing Restoration Logo" className="text-us-logo" />
                     <button className="text-us-close-btn" onClick={onClose} aria-label="Close modal">
                         <X size={24} />
                     </button>

@@ -37,7 +37,7 @@ const InspectionForm = () => {
                 </div>
                 <h3>Request Received!</h3>
                 <p>Thank you, {formData.fullName.split(' ')[0]}. We've received your inspection request.</p>
-                <p className="success-subtext">A SkyShape specialist will verify your address and contact you shortly at {formData.phone}.</p>
+                <p className="success-subtext">A 479 Roofing Restoration specialist will verify your address and contact you shortly at {formData.phone}.</p>
                 <button
                     className="btn-reset"
                     onClick={() => setStatus('idle')}
@@ -81,7 +81,7 @@ const InspectionForm = () => {
                             name="address"
                             value={formData.address}
                             onChange={handleChange}
-                            placeholder="123 Main St, Charlotte, NC"
+                            placeholder="123 Main St, Rogers, AR"
                             required
                             className="form-input"
                         />

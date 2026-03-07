@@ -80,7 +80,7 @@
 .step-number {
     font-size: 1rem;
     font-weight: 700;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     background-color: rgba(0, 123, 255, 0.1);
     padding: 4px 10px;
     border-radius: 6px;
@@ -155,7 +155,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     flex-shrink: 0;
 }
 
@@ -168,7 +168,7 @@
 
 /* Button */
 .btn-primary-solid {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-green);
     color: white;
     padding: 14px 32px;
     border-radius: 8px;
@@ -183,7 +183,7 @@
 }
 
 .btn-primary-solid:hover {
-    background-color: #0056b3;
+    background-color: #1e8a35;
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(0, 123, 255, 0.3);
 }

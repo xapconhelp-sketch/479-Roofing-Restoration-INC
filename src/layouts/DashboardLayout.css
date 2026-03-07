@@ -25,7 +25,7 @@
 .logo-text {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     letter-spacing: -0.025em;
 }
 
@@ -62,14 +62,14 @@
 }
 
 .nav-item:hover {
-    color: var(--primary-blue);
+    color: var(--primary-green);
     background-color: #f8fafc;
 }
 
 .nav-item.active {
-    color: var(--primary-blue);
-    background-color: rgba(1, 108, 214, 0.05);
-    /* very subtle blue */
+    color: var(--primary-green);
+    background-color: rgba(39, 168, 68, 0.05);
+    /* very subtle green */
 }
 
 .nav-item.active::before {
@@ -79,7 +79,7 @@
     top: 0;
     bottom: 0;
     width: 4px;
-    background-color: var(--primary-blue);
+    background-color: var(--primary-green);
 }
 
 .sidebar-footer {
@@ -125,7 +125,7 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-color: var(--primary-blue);
+    background-color: var(--primary-green);
     color: white;
     display: flex;
     align-items: center;

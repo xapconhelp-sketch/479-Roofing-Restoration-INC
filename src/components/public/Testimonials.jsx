@@ -5,7 +5,7 @@ const testimonials = [
         id: 1,
         name: 'Sarah Jenkins',
         role: 'Homeowner',
-        content: 'The team at SKYSHAPEROOFING transformed our home. The attention to detail is unmatched.',
+        content: 'The team at 479 Roofing Restoration transformed our home. The attention to detail is unmatched.',
         rating: 5,
     },
     {

@@ -18,7 +18,7 @@ const processSteps = [
         icon: <Settings size={28} strokeWidth={2} />,
         step: '02',
         title: 'Custom Energy Design',
-        description: 'Engineered for max efficiency in NC\'s climate — panel placement, tilt angle, and system size optimized for your property.',
+        description: 'Engineered for max efficiency in AR\'s climate — panel placement, tilt angle, and system size optimized for your property.',
     },
     {
         icon: <Drill size={28} strokeWidth={2} />,
@@ -34,11 +34,11 @@ const processSteps = [
     },
 ];
 
-/* ───────────── NC Incentives ───────────── */
+/* ───────────── AR Incentives ───────────── */
 const incentives = [
     'Federal Investment Tax Credit (ITC) eligibility — up to 30% of system cost.',
-    'Duke Energy Solar Rebates guidance and application support.',
-    'Increase property value without increased property taxes in NC.',
+    'Arkansas Solar Incentives guidance and application support.',
+    'Increase property value without increased property taxes in AR.',
     'Net metering benefits — earn credits for excess energy you produce.',
     'Full documentation and support for all available financial programs.',
 ];
@@ -62,13 +62,13 @@ const SolarPanelPage = () => {
                 <div className="container solar-hero-content">
                     <div className="solar-hero-badge">
                         <Sun size={16} />
-                        <span>SkyShape Solar Solutions</span>
+                        <span>479 Roofing Restoration Solar Solutions</span>
                     </div>
                     <h1 className="solar-hero-headline">
                         Energy Independence,<br />Engineered by Roofers.
                     </h1>
                     <p className="solar-hero-subheadline">
-                        SkyShape delivers integrated solar systems designed to protect your
+                        479 Roofing Restoration delivers integrated solar systems designed to protect your
                         roof while powering your life. Premium installation. Zero leaks. Guaranteed.
                     </p>
                     <a href="/roof-inspection" className="solar-hero-cta">
@@ -90,7 +90,7 @@ const SolarPanelPage = () => {
                             </h2>
                             <p className="advantage-body">
                                 Most solar companies are just electricians. They don't understand
-                                waterproofing, load distribution, or flashing integrity. At SkyShape,
+                                waterproofing, load distribution, or flashing integrity. At 479 Roofing Restoration,
                                 we ensure the structural integrity of your roof is the foundation of your
                                 solar system's longevity. <strong>No leaks, guaranteed.</strong>
                             </p>
@@ -171,7 +171,7 @@ const SolarPanelPage = () => {
             </section>
 
 
-            {/* ═══════════ NC INCENTIVES ═══════════ */}
+            {/* ═══════════ AR INCENTIVES ═══════════ */}
             <section className="solar-incentives-section">
                 <div className="container">
                     <div className="incentives-card">
@@ -180,7 +180,7 @@ const SolarPanelPage = () => {
                                 <DollarSign size={32} strokeWidth={2} />
                             </div>
                             <div>
-                                <h2 className="incentives-title">Unlock North Carolina Solar Incentives.</h2>
+                                <h2 className="incentives-title">Unlock Arkansas Solar Incentives.</h2>
                                 <p className="incentives-subtitle">
                                     Take advantage of federal and state programs that make solar more
                                     affordable than ever. We guide you through every dollar of savings.
@@ -213,7 +213,7 @@ const SolarPanelPage = () => {
                     <Zap size={40} strokeWidth={1.5} className="final-cta-icon" />
                     <h2 className="final-cta-title">Ready to Power Your Home with Clean Energy?</h2>
                     <p className="final-cta-subtitle">
-                        Get a comprehensive Solar + Roof Analysis from North Carolina's most trusted roofing engineers. Free. No obligation.
+                        Get a comprehensive Solar + Roof Analysis from Arkansas's most trusted roofing engineers. Free. No obligation.
                     </p>
                     <a href="/roof-inspection" className="solar-final-cta-btn">
                         Get My Free Solar + Roof Analysis <ArrowRight size={20} />

@@ -80,11 +80,11 @@ const StickyMenu = () => {
                 <div className="sticky-menu-bar">
 
                     {/* Left Group */}
-                    <a href="#chat" className="sticky-menu-item" onClick={(e) => e.preventDefault()} title="Start a Chat">
+                    <a href="https://wa.me/14792282193" target="_blank" rel="noopener noreferrer" className="sticky-menu-item" title="Chat with us">
                         <MessageCircle size={22} />
                         <span>Chat</span>
                     </a>
-                    <a href="https://wa.me/17045848280" target="_blank" rel="noopener noreferrer" className="sticky-menu-item" title="WhatsApp Emergency">
+                    <a href="tel:4792282193" className="sticky-menu-item" title="Call us">
                         <Phone size={22} />
                         <span>Call</span>
                     </a>
@@ -92,7 +92,7 @@ const StickyMenu = () => {
                     {/* Center Logo */}
                     <div className="sticky-menu-logo-container">
                         <div className="sticky-logo-circle">
-                            <img src="/logo-scrolled.png" alt="SkyShape" className="sticky-logo-img"
+                            <img src="/logo-scrolled.png" alt="479 Roofing Restoration" className="sticky-logo-img"
                                 onError={(e) => { e.target.onerror = null; e.target.src = '/vite.svg' }}
                             />
                         </div>

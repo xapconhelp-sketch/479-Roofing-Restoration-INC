@@ -25,7 +25,7 @@ const EmailUsModal = ({ isOpen, onClose, isEmbedded = false }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const subject = encodeURIComponent("New Inquiry from Website - Skyshape Roofing");
+        const subject = encodeURIComponent("New Inquiry from Website - 479 Roofing Restoration");
         const bodyContent = `Name: ${formData.firstName} ${formData.lastName}
 Phone: ${formData.phone}
 Email: ${formData.email}
@@ -35,7 +35,7 @@ Message:
 ${formData.message}`;
 
         const body = encodeURIComponent(bodyContent);
-        window.location.href = `mailto:info@skyshaperoofing.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:479roofing@gmail.com?subject=${subject}&body=${body}`;
 
         if (onClose) onClose();
     };
@@ -46,7 +46,7 @@ ${formData.message}`;
             {/* Logo Section for Embedded View */}
             {isEmbedded && (
                 <div className="modal-logo-header">
-                    <img src="/logo-factorizado.jpg" alt="SkyShape Roofing" className="modal-top-logo" />
+                    <img src="/Recurso1.png" alt="479 Roofing Restoration" className="modal-top-logo" />
                 </div>
             )}
 
@@ -168,7 +168,7 @@ ${formData.message}`;
             <div className="email-us-modal" onClick={(e) => e.stopPropagation()}>
                 {/* Fallback header */}
                 <div className="email-us-header">
-                    <img src="/logo-scrolled.png" alt="Skyshape Roofing Logo" className="email-us-logo" />
+                    <img src="/Recurso1.png" alt="479 Roofing Restoration Logo" className="email-us-logo" />
                     <button className="email-us-close-btn" onClick={onClose} aria-label="Close modal">
                         <X size={24} />
                     </button>

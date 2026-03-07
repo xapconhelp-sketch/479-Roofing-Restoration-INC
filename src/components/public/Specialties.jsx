@@ -48,7 +48,7 @@ const specialties = [
         id: 6,
         title: "Emergency Mitigation",
         icon: Siren,
-        image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=400&h=300&fit=crop&q=80"
+        image: "/mitigation.jpeg"
     },
     {
         id: 7,

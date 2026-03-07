@@ -19,7 +19,7 @@ const Overview = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <div className="kpi-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-shadow hover:shadow-md">
                     <div className="flex justify-between items-start mb-4">
-                        <div className="p-3 bg-blue-50 rounded-lg text-primary">
+                        <div className="p-3 bg-green-50 rounded-lg text-primary">
                             <DollarSign size={24} />
                         </div>
                         <span className="text-green-600 text-sm font-medium flex items-center bg-green-50 px-2 py-1 rounded-full">
@@ -84,13 +84,13 @@ const Overview = () => {
                     </div>
                     <div className="chart-placeholder h-72 w-full bg-gray-50 rounded-lg flex items-end justify-between px-8 pb-4">
                         {/* Fake bars */}
-                        <div className="w-8 bg-blue-100 rounded-t h-1/3"></div>
+                        <div className="w-8 bg-green-100 rounded-t h-1/3"></div>
                         <div className="w-8 bg-blue-200 rounded-t h-1/2"></div>
                         <div className="w-8 bg-blue-300 rounded-t h-2/3"></div>
                         <div className="w-8 bg-blue-400 rounded-t h-1/4"></div>
-                        <div className="w-8 bg-blue-500 rounded-t h-3/4"></div>
-                        <div className="w-8 bg-blue-600 rounded-t h-full"></div>
-                        <div className="w-8 bg-blue-500 rounded-t h-2/3"></div>
+                        <div className="w-8 bg-green-500 rounded-t h-3/4"></div>
+                        <div className="w-8 bg-green-600 rounded-t h-full"></div>
+                        <div className="w-8 bg-green-500 rounded-t h-2/3"></div>
                         <div className="w-8 bg-blue-400 rounded-t h-1/2"></div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ const Overview = () => {
                     <h3 className="font-bold text-gray-900 mb-6">Recent Activity</h3>
                     <div className="space-y-6">
                         <div className="flex gap-4 items-start">
-                            <div className="w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
+                            <div className="w-2 h-2 rounded-full bg-green-500 mt-2"></div>
                             <div>
                                 <p className="text-sm font-medium text-gray-900">New lead from Website</p>
                                 <p className="text-xs text-gray-500">2 minutes ago • John Smith</p>
@@ -128,7 +128,7 @@ const Overview = () => {
                             </div>
                         </div>
                     </div>
-                    <button className="w-full mt-6 py-2 text-sm text-primary font-medium hover:bg-blue-50 rounded-lg transition-colors">
+                    <button className="w-full mt-6 py-2 text-sm text-primary font-medium hover:bg-green-50 rounded-lg transition-colors">
                         View All Activity
                     </button>
                 </div>

@@ -11,9 +11,9 @@
 
 .badge-blue {
     background-color: #eff6ff;
-    /* blue-50 */
+    /* green-50 */
     color: #2563eb;
-    /* blue-600 */
+    /* green-600 */
     border: 1px solid #dbeafe;
 }
 
@@ -32,6 +32,6 @@
 }
 
 .focus\:ring-primary:focus {
-    --tw-ring-color: var(--primary-blue);
+    --tw-ring-color: var(--primary-green);
     box-shadow: 0 0 0 2px var(--tw-ring-color);
 }

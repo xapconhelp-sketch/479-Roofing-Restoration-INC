@@ -55,7 +55,7 @@ const Projects = () => {
                                 {projectsData.filter(p => p.status === col).map(project => (
                                     <div key={project.id} className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
                                         <div className="flex justify-between items-start mb-2">
-                                            <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-sm">{project.type}</span>
+                                            <span className="text-xs font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded-sm">{project.type}</span>
                                             <button className="text-gray-400 hover:text-gray-600">
                                                 <MoreHorizontal size={16} />
                                             </button>

@@ -17,7 +17,7 @@
 
 .process-header h2 {
     color: #0f172a;
-    /* Navy Blue */
+    /* Dark Green */
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 16px;
@@ -90,19 +90,19 @@
 }
 
 .finance-node {
-    border-color: rgba(1, 108, 214, 0.3);
-    /* Skyshape Blue tint */
+    border-color: rgba(39, 168, 68, 0.3);
+    /* 479 Roofing Restoration green tint */
 }
 
 /* Main Action Node (Professional Inspection) */
 .inspection-node {
-    background: #016CD6;
-    /* Skyshape Blue */
+    background: #27A844;
+    /* 479 Roofing Restoration green */
     border-color: #005bb5;
     color: white;
     padding: 32px 48px;
     transform: scale(1.05);
-    box-shadow: 0 10px 15px -3px rgba(1, 108, 214, 0.4);
+    box-shadow: 0 10px 15px -3px rgba(39, 168, 68, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +118,7 @@
 
 .schedule-action-btn {
     background-color: white;
-    color: #016CD6;
+    color: #27A844;
     border: none;
     border-radius: 8px;
     padding: 12px 24px;
@@ -144,13 +144,13 @@
 /* Tooltips & Interaction */
 .tooltip-trigger:hover {
     transform: translateY(-5px);
-    border-color: #016CD6;
-    box-shadow: 0 10px 15px -3px rgba(1, 108, 214, 0.2);
+    border-color: #27A844;
+    box-shadow: 0 10px 15px -3px rgba(39, 168, 68, 0.2);
 }
 
 .inspection-node:hover {
     transform: scale(1.1) translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(1, 108, 214, 0.5);
+    box-shadow: 0 20px 25px -5px rgba(39, 168, 68, 0.5);
 }
 
 .tooltip-trigger .tooltip-text {
@@ -211,7 +211,7 @@
 .line {
     position: absolute;
     background-color: #94a3b8;
-    /* Light Grey-Blue */
+    /* Light Grey-green */
     width: 3px;
     /* Thicker */
 }
@@ -228,7 +228,7 @@
 }
 
 .pulse-line {
-    /* Base grey-blue line */
+    /* Base grey-green line */
     background: #94a3b8;
     overflow: hidden;
 }
@@ -240,7 +240,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, transparent 0%, #016CD6 50%, transparent 100%);
+    background: linear-gradient(to bottom, transparent 0%, #27A844 50%, transparent 100%);
     background-size: 100% 200%;
     animation: pulseDownward 3s infinite linear;
     opacity: 0.8;
@@ -334,7 +334,7 @@
 }
 
 .simple-down .main-pulse::after {
-    background: linear-gradient(to bottom, transparent 0%, #016CD6 50%, transparent 100%);
+    background: linear-gradient(to bottom, transparent 0%, #27A844 50%, transparent 100%);
     background-size: 100% 200%;
     animation: pulseDownward 2s infinite linear;
     opacity: 1;

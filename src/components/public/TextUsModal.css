@@ -90,14 +90,14 @@
 .text-us-select:focus,
 .text-us-textarea:focus {
     outline: none;
-    border-color: #007BFF;
+    border-color: #27A844;
     background-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
 }
 
 .text-us-input:focus+.input-icon,
 .input-group-icon:focus-within .input-icon {
-    color: #007BFF;
+    color: #27A844;
 }
 
 .text-us-select {
@@ -111,7 +111,7 @@
 
 /* Premium Gradient Button */
 .send-btn.premium-gradient {
-    background: linear-gradient(135deg, #0f172a 0%, #007BFF 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #27A844 100%);
     border: none;
     color: white;
     font-weight: 700;

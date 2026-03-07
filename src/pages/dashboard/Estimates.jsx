@@ -25,14 +25,14 @@ const Estimates = () => {
                 <div className="flex-1 bg-white rounded-xl border border-gray-200 shadow-sm overflow-y-auto p-8">
                     <div className="flex justify-between items-start mb-8 pb-8 border-b border-gray-100">
                         <div>
-                            <h3 className="text-lg font-bold text-gray-900 mb-1">Skyshaperoofing NC</h3>
-                            <p className="text-sm text-gray-500">123 Roofing Lane, Raleigh NC 27601</p>
-                            <p className="text-sm text-gray-500">info@skyshaperoofing.com</p>
+                            <h3 className="text-lg font-bold text-gray-900 mb-1">479 Roofing Restoration AR</h3>
+                            <p className="text-sm text-gray-500">1303 W Sunset Dr, Rogers AR 72756</p>
+                            <p className="text-sm text-gray-500">479roofing@gmail.com</p>
                         </div>
                         <div className="text-right">
                             <h3 className="text-lg font-bold text-gray-900 mb-1">Bill To:</h3>
                             <p className="text-sm text-gray-500">John Doe</p>
-                            <p className="text-sm text-gray-500">456 Oak Street, Durham NC 27701</p>
+                            <p className="text-sm text-gray-500">456 Oak Street, Bentonville AR 72712</p>
                         </div>
                     </div>
 

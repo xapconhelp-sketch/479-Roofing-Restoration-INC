@@ -6,8 +6,8 @@
     z-index: 1000;
     transition: all 0.3s ease;
     color: white;
-    padding: 24px 0;
-    /* Reverted to original desktop padding */
+    padding: 16px 0;
+    /* Reduced for a slimmer top bar */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     background: transparent;
 }
@@ -17,10 +17,12 @@
 .navbar-wrapper.scrolled {
     background-color: white;
     color: black;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    padding-top: 18px;
-    /* Incremented from 12px to give header more size */
-    padding-bottom: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Slightly softer shadow */
+    padding-top: 12px;
+    /* Increased from 10px */
+    padding-bottom: 12px;
+    /* Increased from 10px */
 }
 
 /* 
@@ -38,13 +40,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    /* Added context for absolute children */
 }
 
+/* On scrolled we keep it centered */
+.navbar-wrapper.scrolled .navbar-inner-container {
+    justify-content: center;
+}
 
-
-/* Old inner logo container hidden */
 .logo-container {
     display: none;
+    align-items: center;
+}
+
+.navbar-wrapper.scrolled .logo-container {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-logo-inner {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
 }
 
 /* ... existing code ... */
@@ -105,7 +127,7 @@
 }
 
 .navbar-wrapper.scrolled .nav-links a::after {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-green);
 }
 
 /* Dropdown Styles */
@@ -139,7 +161,7 @@
 }
 
 .navbar-wrapper.scrolled .nav-link-text::after {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-green);
 }
 
 /* Chevron Rotation */
@@ -168,8 +190,8 @@
     backdrop-filter: blur(5px);
     border-radius: 0 0 12px 12px;
     /* Rounded bottom corners */
-    border-top: 4px solid #007BFF;
-    /* Brand Blue Top Border */
+    border-top: 4px solid #27A844;
+    /* Brand Green Top Border */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
     /* Deep shadow */
 
@@ -216,8 +238,8 @@
 
 /* Icon Style */
 .dropdown-icon {
-    color: #007BFF;
-    /* Brand Blue */
+    color: #27A844;
+    /* Brand Green */
     width: 18px;
     height: 18px;
     transition: transform 0.3s ease;
@@ -226,9 +248,9 @@
 /* Hover State - Micro-interaction */
 .dropdown-menu li a:hover {
     background-color: rgba(0, 123, 255, 0.06);
-    /* Ultra-light blue bg */
-    color: #007BFF !important;
-    /* Turn text blue */
+    /* Ultra-light green bg */
+    color: #27A844 !important;
+    /* Turn text green */
     transform: translateX(5px);
     /* Slide right */
 }
@@ -243,7 +265,7 @@
 }
 
 
-/* Logo Section - Decoupled & Overhang */
+/* Logo Section - Overhang Technique */
 .logo-outer-container {
     position: absolute;
     top: 0;
@@ -251,51 +273,42 @@
     height: 100%;
     display: flex;
     align-items: flex-start;
-    /* Align logo to TOP of navbar */
+    /* Start at the top to overhang downwards */
     padding-left: 32px;
-    padding-top: 8px;
-    /* Small offset from very top */
     z-index: 1100;
-    /* Above everything including hero */
-    background: transparent;
-    overflow: visible;
-    /* CRITICAL: Allow logo to hang below navbar */
     pointer-events: none;
     /* Let clicks pass through empty space */
 }
 
 .logo-outer-container a {
-    display: block;
     pointer-events: auto;
-    /* Re-enable clicks on the actual link */
-    line-height: 0;
-    /* Remove any line-height gaps */
+    display: block;
 }
 
-/* Navbar Logo Style - OVERHANG TECHNIQUE */
-/* Using fixed pixel height instead of percentages to avoid
-   sizing issues with absolutely positioned parents */
 .navbar-logo {
     display: block;
-    height: 400px;
-    /* Large overhang on desktop */
+    height: 154px;
+    /* Reduced size by 30% */
     width: auto;
     object-fit: contain;
-    filter: none;
     transition: all 0.3s ease;
-    margin-top: -60px;
-    /* Reverted to original desktop margin */
+    margin-top: 110px;
+    /* Pushes it down further so it hangs below the header line */
 }
 
-/* Scrolled state - fits inside the header box perfectly */
+/* Scrolled state - adjusted to match the smaller header */
 .navbar-wrapper.scrolled .logo-outer-container {
     align-items: center;
     padding-top: 0;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
 
 .navbar-wrapper.scrolled .navbar-logo {
-    height: 250px;
-    margin-top: 0;
+    height: 98px;
+    margin-top: 35px;
+    /* Stays hanging even on scroll */
 }
 
 /* Scrolled Logo Style */
@@ -328,7 +341,7 @@
 
 .navbar-wrapper.scrolled .top-bar-row {
     border-bottom-color: rgba(255, 255, 255, 0.2);
-    /* Keep light border on blue bg */
+    /* Keep light border on green bg */
 }
 
 .top-bar-links {
@@ -357,9 +370,9 @@
 /* Duplicates removed */
 
 /* Contact Button */
-/* "El botón "Contact Us" debe ser Azul (#016CD6) con bordes redondeados mínimos (4px)" */
+/* "El botón "Contact Us" debe ser Azul (#27A844) con bordes redondeados mínimos (4px)" */
 .btn-login {
-    background-color: #016CD6;
+    background-color: #27A844;
     /* Hardcoded for precision */
     color: white;
     padding: 0.75rem 1.5rem;
@@ -373,24 +386,24 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    box-shadow: 0 2px 4px rgba(1, 108, 214, 0.2);
+    box-shadow: 0 2px 4px rgba(39, 168, 68, 0.2);
 }
 
 .btn-login:hover {
-    background-color: #0056b3;
-    /* Darker blue */
-    box-shadow: 0 4px 8px rgba(1, 108, 214, 0.3);
+    background-color: #1e8a35;
+    /* Darker green */
+    box-shadow: 0 4px 8px rgba(39, 168, 68, 0.3);
     /* "ligero box-shadow azul" */
     transform: translateY(-1px);
 }
 
 .navbar-wrapper.scrolled .btn-login {
-    background-color: #016CD6;
+    background-color: #27A844;
     color: white;
 }
 
 .navbar-wrapper.scrolled .btn-login:hover {
-    background-color: #0056b3;
+    background-color: #1e8a35;
 }
 
 /* ========================================
@@ -434,6 +447,10 @@
         color: #0f172a;
     }
 
+    .logo-container {
+        display: none !important;
+    }
+
     .logo-outer-container {
         padding-left: 16px;
         padding-top: 0;
@@ -450,6 +467,7 @@
     .navbar-wrapper.mobile-open .logo-outer-container {
         opacity: 1;
         pointer-events: auto;
+        visibility: visible;
     }
 
     .navbar-logo {

@@ -56,7 +56,7 @@
 }
 
 .role-card:hover {
-    border-color: var(--primary-blue);
+    border-color: var(--primary-green);
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
 }

@@ -10,7 +10,7 @@ const Hero = () => {
         <section
             className="hero-section"
             style={{
-                backgroundImage: 'url(/fondo.png)',
+                backgroundImage: 'url(/casa.jpeg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}
@@ -19,14 +19,12 @@ const Hero = () => {
 
             <div className="hero-content">
                 <div className="hero-text-container">
-                    <img src="/logoparacelular.png" alt="SkyShape Roofing" className="hero-logo-img desktop-only-logo" />
-                    <img src="/logoparacel2.png" alt="SkyShape Roofing" className="hero-logo-img mobile-only-logo" />
                     <h1 className="hero-title">
                         Everything you love lives under your roof. <br />
                         <span className="hero-highlight">Protect it with the best.</span>
                     </h1>
                     <p className="hero-description">
-                        Experience matters. Quality covers. The best warranty in NC.
+                        Experience matters. Quality covers. The best warranty in AR.
                     </p>
 
                     <div className="hero-actions">

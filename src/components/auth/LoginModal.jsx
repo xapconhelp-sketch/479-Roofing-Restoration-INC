@@ -34,7 +34,7 @@ const LoginModal = ({ isOpen, onClose }) => {
                 {!role ? (
                     /* Role Selection View */
                     <div className="role-selection">
-                        <h2 className="text-2xl font-bold mb-2 text-center text-gray-900">Welcome to Skyshape</h2>
+                        <h2 className="text-2xl font-bold mb-2 text-center text-gray-900">Welcome to 479 Roofing Restoration</h2>
                         <p className="text-gray-500 mb-8 text-center">Please select your portal to continue.</p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -42,7 +42,7 @@ const LoginModal = ({ isOpen, onClose }) => {
                                 className="role-card group"
                                 onClick={() => handleRoleSelect('enterprise')}
                             >
-                                <div className="icon-box bg-blue-50 text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <div className="icon-box bg-green-50 text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
                                     <Building2 size={32} />
                                 </div>
                                 <h3 className="font-bold text-lg mb-1 group-hover:text-primary transition-colors">Enterprise</h3>
@@ -73,7 +73,7 @@ const LoginModal = ({ isOpen, onClose }) => {
                         </button>
 
                         <div className="text-center mb-6">
-                            <div className={`inline-flex p-3 rounded-full mb-3 ${role === 'enterprise' ? 'bg-blue-50 text-primary' : 'bg-green-50 text-green-600'}`}>
+                            <div className={`inline-flex p-3 rounded-full mb-3 ${role === 'enterprise' ? 'bg-green-50 text-primary' : 'bg-green-50 text-green-600'}`}>
                                 {role === 'enterprise' ? <Building2 size={24} /> : <Home size={24} />}
                             </div>
                             <h2 className="text-2xl font-bold text-gray-900">
@@ -132,7 +132,7 @@ const LoginModal = ({ isOpen, onClose }) => {
 
                             <button
                                 type="submit"
-                                className={`w-full py-3 px-4 rounded-lg text-white font-bold shadow-md transition-transform active:scale-95 flex justify-center items-center ${role === 'enterprise' ? 'bg-primary hover:bg-blue-700' : 'bg-green-600 hover:bg-green-700'}`}
+                                className={`w-full py-3 px-4 rounded-lg text-white font-bold shadow-md transition-transform active:scale-95 flex justify-center items-center ${role === 'enterprise' ? 'bg-primary hover:bg-green-700' : 'bg-green-600 hover:bg-green-700'}`}
                             >
                                 {role === 'enterprise' ? 'Sign In' : 'View My Project'} <ArrowRight size={18} className="ml-2" />
                             </button>

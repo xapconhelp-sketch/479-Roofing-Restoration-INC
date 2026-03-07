@@ -11,9 +11,9 @@ const Footer = () => {
                     <div className="footer-info">
                         {/* Branding */}
                         <div className="footer-column branding-column">
-                            <h3 className="footer-heading">SkyShape Roofing</h3>
+                            <h3 className="footer-heading">479 Roofing Restoration</h3>
                             <p className="footer-description">
-                                Premier roofing solutions in North Carolina.
+                                Premier roofing solutions in Arkansas.
                                 Committed to quality, integrity, and your home's protection.
                             </p>
 
@@ -49,21 +49,21 @@ const Footer = () => {
                             <h3 className="footer-heading">Contact</h3>
                             <ul className="contact-list">
                                 <li>
-                                    <a href="https://maps.google.com/?q=615+S+College+St,+Charlotte,+NC+28202" target="_blank" rel="noopener noreferrer" className="contact-link">
+                                    <a href="https://maps.google.com/?q=1303+W+Sunset+Dr+Rogers+AR+72756" target="_blank" rel="noopener noreferrer" className="contact-link">
                                         <MapPin size={18} className="contact-icon" />
-                                        <span>615 S College St,<br />Charlotte, NC 28202</span>
+                                        <span>1303 W Sunset Dr,<br />Rogers, AR 72756</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="tel:7045848280" className="contact-link">
+                                    <a href="tel:4792282193" className="contact-link">
                                         <Phone size={18} className="contact-icon" />
-                                        <span>(704) 584-8280</span>
+                                        <span>(479) 228-2193</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:skyshaperoofingnc@gmail.com" className="contact-link">
+                                    <a href="mailto:479roofing@gmail.com" className="contact-link">
                                         <Mail size={18} className="contact-icon" />
-                                        <span>skyshaperoofingnc@gmail.com</span>
+                                        <span>479roofing@gmail.com</span>
                                     </a>
                                 </li>
                             </ul>
@@ -74,13 +74,13 @@ const Footer = () => {
                     <div className="footer-map">
                         <div className="map-container">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.545812971239!2d-80.8431267!3d35.2229569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a02f0c765c3b%3A0x6e8e8f8f8f8f8f8f!2s615%20S%20College%20St%2C%20Charlotte%2C%20NC%2028202!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.0505!2d-94.136!3d36.331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c917!2s1303%20W%20Sunset%20Dr%2C%20Rogers%2C%20AR%2072756!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
                                 loading="lazy"
-                                title="SkyShape Roofing Location"
+                                title="479 Roofing Restoration Location"
                             ></iframe>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="footer-bottom">
                 <div className="container">
-                    <p>&copy; {new Date().getFullYear()} SkyShape Roofing. All rights reserved. | Licensed & Insured in NC.</p>
+                    <p>&copy; {new Date().getFullYear()} 479 Roofing Restoration. All rights reserved. | Licensed & Insured in AR.</p>
                 </div>
             </div>
         </footer>

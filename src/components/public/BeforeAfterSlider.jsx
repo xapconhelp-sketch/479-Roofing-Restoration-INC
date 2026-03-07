@@ -6,7 +6,7 @@ const BeforeAfterSlider = ({
     beforeImage,
     afterImage,
     beforeLabel = "BEFORE (Old Roof)",
-    afterLabel = "AFTER (SkyShape System)"
+    afterLabel = "AFTER (479 Roofing Restoration System)"
 }) => {
     const [sliderSearch, setSliderPosition] = useState(50);
     const [isDragging, setIsDragging] = useState(false);
@@ -78,7 +78,7 @@ const BeforeAfterSlider = ({
             >
                 <div className="ba-line"></div>
                 <div className="ba-circle">
-                    <ChevronsLeftRight size={24} color="#007BFF" />
+                    <ChevronsLeftRight size={24} color="#27A844" />
                 </div>
             </div>
         </div>

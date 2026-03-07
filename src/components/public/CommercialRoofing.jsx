@@ -19,7 +19,7 @@ const roofingSystems = [
         keyBenefit: 'Heat-reflective and highly resistant to UV rays.',
         badge: 'Best for Warehouse',
         description:
-            'TPO\'s reflective white surface significantly reduces cooling costs by bouncing heat instead of absorbing it — a critical advantage during North Carolina\'s intense summers. Paired with competitive pricing and our latest installation methods, TPO is the smart choice for energy-conscious businesses.',
+            'TPO\'s reflective white surface significantly reduces cooling costs by bouncing heat instead of absorbing it — a critical advantage during Arkansas\'s intense summers. Paired with competitive pricing and our latest installation methods, TPO is the smart choice for energy-conscious businesses.',
     },
     {
         icon: <Shield size={32} strokeWidth={2} />,
@@ -53,7 +53,7 @@ const CommercialRoofing = () => {
                     <p className="commercial-subtitle">
                         From retail spaces to industrial complexes, we engineer roofing systems
                         designed for durability, energy efficiency, and full code compliance in
-                        North Carolina.
+                        Arkansas.
                     </p>
                 </div>
 

@@ -76,8 +76,8 @@
 }
 
 .btn-storm-primary {
-    background-color: #007BFF;
-    /* SkyShape Blue */
+    background-color: #27A844;
+    /* 479 Roofing Restoration green */
     color: white;
     padding: 16px 32px;
     border-radius: 8px;
@@ -91,8 +91,8 @@
 }
 
 .btn-storm-primary:hover {
-    background-color: #0056b3;
-    /* Darker Blue */
+    background-color: #1e8a35;
+    /* Darker green */
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(0, 123, 255, 0.4);
 }
@@ -187,7 +187,7 @@
 }
 
 .roadmap-card:hover {
-    border-color: #38bdf8;
+    border-color: #27A844;
     transform: translateY(-4px);
     /* Hover lift */
     box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
@@ -198,7 +198,7 @@
     width: 64px;
     height: 64px;
     background-color: rgba(56, 189, 248, 0.1);
-    color: #38bdf8;
+    color: #27A844;
     border-radius: 12px;
     display: flex;
     align-items: center;

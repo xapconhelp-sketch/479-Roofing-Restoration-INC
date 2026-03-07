@@ -66,8 +66,8 @@
 }
 
 .desktop-only-logo {
-    display: none;
-    /* Hide on desktop by default as before */
+    display: block;
+    /* Show on desktop */
 }
 
 .mobile-only-logo {
@@ -80,7 +80,7 @@
     letter-spacing: 0.2em;
     font-size: 0.875rem;
     margin-bottom: var(--spacing-2);
-    color: var(--primary-blue);
+    color: var(--primary-green);
     font-weight: 600;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .hero-highlight {
-    color: var(--primary-blue);
+    color: var(--primary-green);
 }
 
 .hero-description {
@@ -141,11 +141,11 @@
 }
 
 .badge-icon {
-    color: var(--primary-blue);
+    color: var(--primary-green);
 }
 
 .separator {
-    color: var(--primary-blue);
+    color: var(--primary-green);
     font-weight: 700;
     font-size: 1.2em;
 }

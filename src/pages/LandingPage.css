@@ -4,7 +4,7 @@
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background-image: url('/bg.jpg');
+    background-image: url('/casa.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -74,8 +74,8 @@
 
 /* Primary Hero Button */
 .hero-ctas .btn-primary {
-    background-color: var(--primary-blue);
-    /* #016CD6 */
+    background-color: var(--primary-green);
+    /* #27A844 */
     color: white;
     padding: 1rem 2.5rem;
     font-size: 1.125rem;
@@ -89,9 +89,9 @@
 
 .hero-ctas .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(1, 108, 214, 0.3), 0 4px 6px -2px rgba(1, 108, 214, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(39, 168, 68, 0.3), 0 4px 6px -2px rgba(39, 168, 68, 0.1);
     /* "ligero box-shadow azul" */
-    background-color: #0056b3;
+    background-color: #1e8a35;
 }
 
 /* Secondary Hero Button */
@@ -206,8 +206,8 @@
     text-align: left;
     border: 1px solid #f0f0f0;
     /* Very subtle border */
-    border-top: 4px solid var(--primary-blue);
-    /* Requirement: Blue top border */
+    border-top: 4px solid var(--primary-green);
+    /* Requirement: green top border */
     position: relative;
     overflow: hidden;
 }
@@ -216,19 +216,19 @@
     transform: translateY(-5px);
     /* Requirement: Lift -5px */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    border-top-color: #0056b3;
-    /* Requirement: More vibrant blue on hover */
+    border-top-color: #1e8a35;
+    /* Requirement: More vibrant green on hover */
 }
 
 .icon-wrapper {
     display: inline-flex;
     padding: 12px;
-    background-color: rgba(1, 108, 214, 0.05);
-    /* Very faint blue background */
+    background-color: rgba(39, 168, 68, 0.05);
+    /* Very faint green background */
     border-radius: 50%;
     /* Circle looks more elegant */
     margin-bottom: 1.5rem;
-    color: var(--primary-blue);
+    color: var(--primary-green);
 }
 
 /* Thinner icons */

@@ -44,7 +44,7 @@ const RoofingProcess = () => {
                             Storms are the primary cause for interpreting whether a property needs basic maintenance, a targeted repair, or a <strong>Full Replacement</strong>. High winds and large hail can compromise the integrity of your exterior systems long before leaks appear inside.
                         </p>
                         <p className="rp-action-call">
-                            <em>The first step is scheduling an inspection with Skyshape.</em>
+                            <em>The first step is scheduling an inspection with 479 Roofing Restoration.</em>
                         </p>
                         <button className="btn btn-primary mt-4" onClick={handleScheduleClick}>
                             Schedule Inspection
@@ -88,7 +88,7 @@ const RoofingProcess = () => {
                         The path to take depends on two factors: <strong>the magnitude of the damage and your economy</strong>.
                     </p>
                     <p className="rp-decision-subtext">
-                        This is where the honesty and ethics that characterize Skyshape come into play. One of our professionals will sit down with you to thoroughly explain the inspection results and present transparent, viable options.
+                        This is where the honesty and ethics that characterize 479 Roofing Restoration come into play. One of our professionals will sit down with you to thoroughly explain the inspection results and present transparent, viable options.
                     </p>
 
                     <div className="rp-decision-actions">

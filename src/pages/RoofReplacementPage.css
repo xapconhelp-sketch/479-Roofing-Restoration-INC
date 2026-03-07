@@ -63,7 +63,7 @@
 }
 
 .btn-hero-primary {
-    background-color: #007BFF;
+    background-color: #27A844;
     color: white;
     padding: 16px 32px;
     border-radius: 8px;
@@ -75,12 +75,12 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    /* Subtle blue glow on dark background */
+    /* Subtle green glow on dark background */
     box-shadow: 0 0 20px rgba(0, 123, 255, 0.35), 0 4px 12px rgba(0, 123, 255, 0.25);
 }
 
 .btn-hero-primary:hover {
-    background-color: #0056b3;
+    background-color: #1e8a35;
     transform: translateY(-2px);
     /* Intensified glow on hover */
     box-shadow: 0 0 30px rgba(0, 123, 255, 0.5), 0 10px 20px -3px rgba(0, 123, 255, 0.4);
@@ -120,7 +120,7 @@
     font-size: 2.5rem;
     font-weight: 800;
     color: #0f172a;
-    /* Navy Blue */
+    /* Dark Green */
     margin-bottom: 32px;
 }
 
@@ -143,8 +143,8 @@
 }
 
 .pillar-icon {
-    color: #007BFF;
-    /* Brand Blue */
+    color: #27A844;
+    /* Brand Green */
 }
 
 .cta-wrapper {
@@ -252,8 +252,8 @@
 }
 
 .cost-card:hover {
-    border-color: #38bdf8;
-    /* Blue thin border */
+    border-color: #27A844;
+    /* green thin border */
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
 }
@@ -299,7 +299,7 @@
 }
 
 .btn-pricing-cta {
-    background-color: #007BFF;
+    background-color: #27A844;
     color: white;
     padding: 16px 48px;
     border-radius: 8px;
@@ -312,7 +312,7 @@
 }
 
 .btn-pricing-cta:hover {
-    background-color: #0056b3;
+    background-color: #1e8a35;
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(0, 123, 255, 0.4);
 }

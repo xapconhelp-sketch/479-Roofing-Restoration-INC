@@ -9,7 +9,7 @@ const DashboardLayout = () => {
             {/* Sidebar */}
             <aside className="sidebar">
                 <div className="sidebar-header">
-                    <h1 className="logo-text">SKYSHAPE <span>OS</span></h1>
+                    <h1 className="logo-text">479 Roofing Restoration <span>OS</span></h1>
                 </div>
 
                 <nav className="sidebar-nav">

@@ -86,7 +86,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #007BFF 0%, #00C9DB 100%);
+    background: linear-gradient(135deg, #27A844 0%, #27A844 100%);
     color: white;
     padding: 16px 36px;
     border-radius: 10px;
@@ -325,7 +325,7 @@
     left: 10%;
     right: 10%;
     height: 2px;
-    background: linear-gradient(90deg, var(--electric-cyan), #007BFF, var(--electric-cyan));
+    background: linear-gradient(90deg, var(--electric-cyan), #27A844, var(--electric-cyan));
     opacity: 0.4;
     z-index: 0;
 }
@@ -354,7 +354,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg, #007BFF, var(--electric-cyan));
+    background: linear-gradient(90deg, #27A844, var(--electric-cyan));
     border-radius: 12px 12px 0 0;
     transform: scaleX(0);
     transform-origin: left;
@@ -383,14 +383,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #007BFF;
+    color: #27A844;
     margin: 0 auto 16px;
     transition: all 0.35s ease;
     border: 1px solid rgba(0, 123, 255, 0.12);
 }
 
 .process-step-card:hover .step-icon-wrapper {
-    background: linear-gradient(135deg, #007BFF, var(--electric-cyan));
+    background: linear-gradient(135deg, #27A844, var(--electric-cyan));
     color: #FFFFFF;
     box-shadow: 0 8px 16px -4px rgba(0, 229, 255, 0.3);
 }
@@ -411,7 +411,7 @@
 }
 
 
-/* ═══════════ NC INCENTIVES ═══════════ */
+/* ═══════════ AR INCENTIVES ═══════════ */
 .solar-incentives-section {
     background-color: #FFFFFF;
     padding: 100px 0;
@@ -509,7 +509,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(135deg, #007BFF 0%, #00C9DB 100%);
+    background: linear-gradient(135deg, #27A844 0%, #27A844 100%);
     color: white;
     padding: 14px 32px;
     border-radius: 8px;
@@ -575,7 +575,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #007BFF 0%, var(--electric-cyan) 100%);
+    background: linear-gradient(135deg, #27A844 0%, var(--electric-cyan) 100%);
     color: white;
     padding: 18px 48px;
     border-radius: 10px;

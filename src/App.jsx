@@ -15,7 +15,6 @@ const StormRestorationPage = React.lazy(() => import('./pages/StormRestorationPa
 const ThankYouPage = React.lazy(() => import('./pages/ThankYouPage'));
 const FinancingPage = React.lazy(() => import('./pages/FinancingPage'));
 const CommercialRoofingPage = React.lazy(() => import('./pages/CommercialRoofingPage'));
-const SolarPanelPage = React.lazy(() => import('./pages/SolarPanelPage'));
 const InsuranceClaimPage = React.lazy(() => import('./pages/InsuranceClaimPage'));
 
 // Dashboard lazy imports
@@ -28,7 +27,7 @@ const ComingSoon = React.lazy(() => import('./components/common/ComingSoon'));
 // Fallback loader while downloading chunks
 const PageLoader = () => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh', background: 'transparent' }}>
-    <div className="loader" style={{ border: '4px solid #f3f3f3', borderTop: '4px solid #016CD6', borderRadius: '50%', width: '40px', height: '40px', animation: 'spin 1s linear infinite' }}></div>
+    <div className="loader" style={{ border: '4px solid #f3f3f3', borderTop: '4px solid #27A844', borderRadius: '50%', width: '40px', height: '40px', animation: 'spin 1s linear infinite' }}></div>
     <style>{`@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }`}</style>
   </div>
 );
@@ -49,7 +48,6 @@ function App() {
             <Route path="/storm-restoration" element={<StormRestorationPage />} />
             <Route path="/financing" element={<FinancingPage />} />
             <Route path="/commercial-roofing" element={<CommercialRoofingPage />} />
-            <Route path="/solar-panel" element={<SolarPanelPage />} />
             <Route path="/insurance-claim" element={<InsuranceClaimPage />} />
             <Route path="/thank-you" element={<ThankYouPage />} />
           </Route>

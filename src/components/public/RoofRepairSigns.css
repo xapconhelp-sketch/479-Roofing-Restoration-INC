@@ -34,8 +34,8 @@
 .repair-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.04);
-    border-color: #38bdf8;
-    /* Sky Blue accent on hover */
+    border-color: #27A844;
+    /* Light Green accent on hover */
 }
 
 /* Icon Styling */
@@ -44,8 +44,8 @@
     height: 64px;
     background-color: #0f172a;
     /* Petrol Green / Dark Slate */
-    color: #38bdf8;
-    /* Sky Blue Icon */
+    color: #27A844;
+    /* Light Green Icon */
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -55,7 +55,7 @@
 }
 
 .repair-card:hover .repair-icon-wrapper {
-    background-color: #38bdf8;
+    background-color: #27A844;
     color: #ffffff;
     transform: rotate(5deg) scale(1.1);
 }
@@ -116,8 +116,8 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background-color: #38bdf8;
-    /* Sky Blue */
+    background-color: #27A844;
+    /* Light Green */
     color: white;
     padding: 14px 28px;
     border-radius: 8px;
@@ -128,6 +128,6 @@
 
 .btn-repair-cta:hover {
     background-color: #0ea5e9;
-    /* Darker Sky Blue */
+    /* Darker Light Green */
     transform: scale(1.05);
 }

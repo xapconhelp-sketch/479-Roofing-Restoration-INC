@@ -3,8 +3,8 @@
 
 :root {
   /* Colors */
-  --primary-blue: #016CD6;
-  --secondary-blue: #0056b3;
+  --primary-green: #27A844;
+  --secondary-green: #1e8a35;
   --text-primary: #000000;
   --text-secondary: #333333;
   --bg-primary: #FFFFFF;
@@ -39,7 +39,7 @@
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-primary: 0 4px 14px 0 rgba(1, 108, 214, 0.39);
+  --shadow-primary: 0 4px 14px 0 rgba(39, 168, 68, 0.39);
 
   line-height: 1.5;
   font-weight: 400;
@@ -196,11 +196,11 @@ img {
 }
 
 .text-primary {
-  color: var(--primary-blue);
+  color: var(--primary-green);
 }
 
 .bg-primary {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-green);
 }
 
 .bg-dark {
@@ -227,7 +227,7 @@ img {
 /* Standard .btn class already has 12px 32px padding */
 
 .btn-primary {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-green);
   color: white;
   box-shadow: none;
   border: 2px solid transparent;
@@ -235,7 +235,7 @@ img {
 }
 
 .btn-primary:hover {
-  background-color: var(--secondary-blue);
+  background-color: var(--secondary-green);
   box-shadow: var(--shadow-primary);
 }
 
@@ -257,18 +257,18 @@ img {
 
 .btn-secondary:hover {
   background-color: white;
-  color: var(--primary-blue);
-  /* or black as requested? Request said "texto negro/azul". Primary blue is safer for branding. */
+  color: var(--primary-green);
+  /* or black as requested? Request said "texto negro/azul". Primary green is safer for branding. */
 }
 
 /* Alternate secondary for light backgrounds */
 .bg-white .btn-secondary {
-  border: 2px solid var(--primary-blue);
-  color: var(--primary-blue);
+  border: 2px solid var(--primary-green);
+  color: var(--primary-green);
 }
 
 .bg-white .btn-secondary:hover {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-green);
   color: white;
 }
 

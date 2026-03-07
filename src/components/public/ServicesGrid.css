@@ -105,8 +105,8 @@
 }
 
 .btn-more-info {
-    background-color: #016CD6;
-    /* Requirement: Blue #016CD6 */
+    background-color: #27A844;
+    /* Requirement: green #27A844 */
     color: #FFFFFF;
     /* Requirement: White text */
     border: none;
@@ -118,13 +118,13 @@
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(1, 108, 214, 0.3);
+    box-shadow: 0 4px 15px rgba(39, 168, 68, 0.3);
 }
 
 .btn-more-info:hover {
-    background-color: #0056b3;
+    background-color: #1e8a35;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(1, 108, 214, 0.4);
+    box-shadow: 0 6px 20px rgba(39, 168, 68, 0.4);
 }
 
 /* Responsiveness */

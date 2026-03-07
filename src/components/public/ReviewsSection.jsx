@@ -9,7 +9,7 @@ const reviews = [
         profile_photo_url: "https://lh3.googleusercontent.com/a-/ALV-UjWab1...=s128-c0x00000000-cc-rp-mo", // Placeholder logic in CSS
         rating: 5,
         relative_time_description: "2 months ago",
-        text: "Skyshaperoofing transformed our home! The team was professional, cleaned up perfectly, and finished ahead of schedule. The new roof looks absolutely amazing. Highly recommended for anyone in Charlotte!",
+        text: "479 Roofing Restoration transformed our home! The team was professional, cleaned up perfectly, and finished ahead of schedule. The new roof looks absolutely amazing. Highly recommended for anyone in Rogers!",
         google_url: "#"
     },
     {
@@ -25,7 +25,7 @@ const reviews = [
         profile_photo_url: null,
         rating: 5,
         relative_time_description: "3 weeks ago",
-        text: "We had a severe storm damage our shingles. Skyshape came out the next day, gave a fair estimate, and the repair was seamless. You can't even tell where the damage was. Thank you!",
+        text: "We had a severe storm damage our shingles. 479 Roofing Restoration came out the next day, gave a fair estimate, and the repair was seamless. You can't even tell where the damage was. Thank you!",
         google_url: "#"
     }
 ];

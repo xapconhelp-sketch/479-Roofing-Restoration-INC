@@ -29,9 +29,9 @@
     align-items: center;
     gap: 8px;
     background-color: rgba(56, 189, 248, 0.2);
-    /* Sky Blue Tint */
-    color: #38bdf8;
-    /* Sky Blue */
+    /* Light Green Tint */
+    color: #27A844;
+    /* Light Green */
     border: 1px solid rgba(56, 189, 248, 0.4);
     padding: 8px 16px;
     border-radius: 9999px;
@@ -66,8 +66,8 @@
 }
 
 .btn-repair-primary {
-    background-color: #38bdf8;
-    /* Sky Blue */
+    background-color: #27A844;
+    /* Light Green */
     color: #0f172a;
     /* Dark Text */
     padding: 16px 32px;
@@ -84,7 +84,7 @@
 
 .btn-repair-primary:hover {
     background-color: #0ea5e9;
-    /* Darker Sky Blue */
+    /* Darker Light Green */
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.4);
 }
@@ -115,7 +115,7 @@
 }
 
 .detail-icon {
-    color: #38bdf8;
+    color: #27A844;
     margin-bottom: 20px;
 }
 

@@ -20,7 +20,7 @@ const teamMembers = [
         id: 3,
         name: 'Director Name',
         role: 'Field Director',
-        description: 'Hands-on leadership in emergency restoration and storm damage response across North Carolina.',
+        description: 'Hands-on leadership in emergency restoration and storm damage response across Arkansas.',
         photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face&q=80'
     }
 ];
@@ -35,15 +35,15 @@ const AboutUs = () => {
                         {/* Left: Image */}
                         <div className="about-image-wrapper">
                             <img
-                                src="/tarjeta-presentacion.png"
-                                alt="SkyShape Roofing corporate mockup"
+                                src="/VisualRedes.png"
+                                alt="479 Roofing Restoration corporate mockup"
                                 loading="lazy"
                             />
                         </div>
 
                         {/* Right: Content */}
                         <div className="about-content">
-                            <p className="about-pre-headline">THE SKYSHAPE LEGACY</p>
+                            <p className="about-pre-headline">THE 479 Roofing Restoration LEGACY</p>
                             <h2 className="about-headline">
                                 Beyond Construction: We Build Peace of Mind.
                             </h2>
@@ -53,10 +53,10 @@ const AboutUs = () => {
 
                             <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: '#0f172a', marginBottom: '8px' }}>🤝 Our Essence</h3>
                             <p className="about-body-text">
-                                At SkyShape Roofing & Solutions, we don't just see shingles, gutters, or siding. We see the laughter in your living room, the safety of your children’s sleep, and the investment of a lifetime.
+                                At 479 Roofing Restoration, we don't just see shingles, gutters, or siding. We see the laughter in your living room, the safety of your children’s sleep, and the investment of a lifetime.
                             </p>
                             <p className="about-body-text">
-                                For the past 5 years, we’ve rooted ourselves in the North Carolina community, not as contractors, but as neighbors. With over 100+ projects successfully completed in every specialty, our experience isn't just a number—it’s a promise that we’ve seen it all and fixed it all with the same care we’d give our own homes.
+                                For the past 5 years, we’ve rooted ourselves in the Arkansas community, not as contractors, but as neighbors. With over 100+ projects successfully completed in every specialty, our experience isn't just a number—it’s a promise that we’ve seen it all and fixed it all with the same care we’d give our own homes.
                             </p>
 
                             <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: '#0f172a', marginTop: '24px', marginBottom: '8px' }}>Why We Do It</h3>

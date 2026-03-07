@@ -7,7 +7,7 @@ const ThankYouPage = () => {
     // Simple confetti effect on mount
     useEffect(() => {
         const createConfetti = () => {
-            const colors = ['#007BFF', '#10B981', '#F59E0B', '#EF4444'];
+            const colors = ['#27A844', '#10B981', '#F59E0B', '#EF4444'];
             const container = document.getElementById('confetti-container');
 
             if (!container) return;
@@ -37,14 +37,14 @@ const ThankYouPage = () => {
                 <h1 className="thank-you-title">Success! Your Request is in Good Hands.</h1>
 
                 <p className="thank-you-body">
-                    Thank you for trusting SkyShape. Our specialist team is reviewing your details and will call you within the next 24 business hours to confirm your inspection.
+                    Thank you for trusting 479 Roofing Restoration. Our specialist team is reviewing your details and will call you within the next 24 business hours to confirm your inspection.
                 </p>
 
                 {/* Urgent Assistance Block */}
                 <div className="urgent-assistance-box">
                     <p className="urgent-text">Need immediate assistance? Speak with us right now.</p>
                     <a
-                        href="https://wa.me/17045848280?text=Hi%20SkyShape,%20I%20just%20requested%20a%20free%20inspection%20and%20have%20some%20urgent%20questions."
+                        href="https://wa.me/17045848280?text=Hi%20479%20Roofing%20Restoration,%20I%20just%20requested%20a%20free%20inspection%20and%20have%20some%20urgent%20questions."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-whatsapp pulse-animation"

@@ -13,7 +13,7 @@ const RoofReplacementPage = () => {
                         <span>Strategic Roof Replacement</span>
                     </div>
                     <h1 className="replacement-headline">
-                        Strategic Roof Replacement<br />for Your Charlotte Home.
+                        Strategic Roof Replacement<br />for Your Rogers Home.
                     </h1>
                     <p className="replacement-subheadline">
                         Understand the costs, leverage our transparency, and invest with confidence.
@@ -78,7 +78,7 @@ const RoofReplacementPage = () => {
                     <div className="section-header">
                         <h2 className="section-title">Transparent Pricing. No Hidden Fees.</h2>
                         <p className="section-subtitle">
-                            Understanding the cost of a new roof in Charlotte shouldn&apos;t be a mystery.
+                            Understanding the cost of a new roof in Rogers shouldn&apos;t be a mystery.
                             We break down the variables so you can set the right budget.
                         </p>
                     </div>
@@ -102,7 +102,7 @@ const RoofReplacementPage = () => {
                                 <FileText size={24} />
                             </div>
                             <h3>Full Code Compliance</h3>
-                            <p>We handle all Charlotte permits and inspections. Your project will adhere strictly to the NC State Building Code, avoiding costly city delays.</p>
+                            <p>We handle all Rogers permits and inspections. Your project will adhere strictly to the Arkansas State Building Code, avoiding costly city delays.</p>
                         </div>
                         <div className="cost-card">
                             <div className="cost-icon-wrapper">
@@ -118,11 +118,11 @@ const RoofReplacementPage = () => {
                             <h3>Structural Integrity</h3>
                             <p>We inspect decking thoroughly. If we find hidden damage, we document it and repair it—ensuring your new roof sits on a solid foundation.</p>
                         </div>
-                        <div className="cost-card" style={{ borderColor: '#38bdf8', backgroundColor: '#F0F9FF' }}>
+                        <div className="cost-card" style={{ borderColor: '#27A844', backgroundColor: '#F0F9FF' }}>
                             <div className="cost-icon-wrapper">
                                 <ShieldCheck size={24} />
                             </div>
-                            <h3>The SkyShape Standard</h3>
+                            <h3>The 479 Roofing Restoration Standard</h3>
                             <p>We never recommend unnecessary repairs. Our transparent approach builds trust by giving you a range of product options and financing plans.</p>
                         </div>
                     </div>

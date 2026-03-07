@@ -1,5 +1,5 @@
 .site-footer {
-    background-color: #000000;
+    background-color: #01112A;
     color: #94A3B8;
     padding-top: 100px;
     padding-bottom: 40px;
@@ -51,7 +51,7 @@
 }
 
 .social-link:hover {
-    color: var(--primary-blue, #016CD6);
+    color: var(--primary-green, #27A844);
     transform: translateY(-2px);
 }
 

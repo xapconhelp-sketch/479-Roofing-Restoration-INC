@@ -97,7 +97,7 @@ const CommercialRoofingPage = () => {
                     </h1>
                     <p className="commercial-hero-subheadline">
                         From retail spaces to industrial complexes, we deliver roofing systems built
-                        for durability, energy efficiency, and full code compliance across North Carolina.
+                        for durability, energy efficiency, and full code compliance across Arkansas.
                     </p>
                     <a href="/roof-inspection" className="btn-hero-primary">
                         Schedule a Free Site Assessment <ArrowRight size={20} />
@@ -140,14 +140,14 @@ const CommercialRoofingPage = () => {
                                     </p>
                                     <div className="system-benefits">
                                         <div className="benefit-item">
-                                            <Factory className="text-blue-500 mt-1" size={24} />
+                                            <Factory className="text-green-600 mt-1" size={24} />
                                             <div>
                                                 <h4>Optimized Space</h4>
                                                 <p>Ideal for HVAC units and rooftop equipment.</p>
                                             </div>
                                         </div>
                                         <div className="benefit-item">
-                                            <ShieldCheck className="text-blue-500 mt-1" size={24} />
+                                            <ShieldCheck className="text-green-600 mt-1" size={24} />
                                             <div>
                                                 <h4>Leak Prevention</h4>
                                                 <p>Advanced membranes ensure watertight integrity.</p>
@@ -175,7 +175,7 @@ const CommercialRoofingPage = () => {
                                     <h2 className="system-title">TPO Roofing</h2>
                                     <h3 className="system-subtitle">Energy-Efficient Cool Roof</h3>
                                     <p className="system-description">
-                                        TPO's reflective white surface significantly reduces cooling costs by bouncing heat instead of absorbing it — a critical advantage during North Carolina's intense summers. Paired with competitive pricing and our latest installation methods, TPO is the smart choice for energy-conscious businesses.
+                                        TPO's reflective white surface significantly reduces cooling costs by bouncing heat instead of absorbing it — a critical advantage during Arkansas's intense summers. Paired with competitive pricing and our latest installation methods, TPO is the smart choice for energy-conscious businesses.
                                     </p>
                                     <div className="system-benefits">
                                         <div className="benefit-item">

@@ -26,12 +26,12 @@ const claimsData = [
     },
     {
         title: "Severe Weather Expertise",
-        description: "We use local weather data to anticipate risks from Charlotte's intense thunderstorms and hail, proactively preparing your roof for our specific climate challenges.",
+        description: "We use local weather data to anticipate risks from Rogers's intense thunderstorms and hail, proactively preparing your roof for our specific climate challenges.",
         icon: <CloudLightning size={28} />
     },
     {
         title: "Local Ordinances & Compliance",
-        description: "We know Charlotte's building codes and permit requirements inside out, ensuring full compliance and a smooth, delay-free administrative process for your project.",
+        description: "We know Rogers's building codes and permit requirements inside out, ensuring full compliance and a smooth, delay-free administrative process for your project.",
         icon: <Scale size={28} />
     }
 ];
@@ -206,16 +206,16 @@ const InsuranceClaimPage = () => {
                     <section className="info-section">
                         <div className="container text-center">
                             <div className="max-w-3xl mx-auto">
-                                <Umbrella size={64} className="text-blue-500 mx-auto mb-6" />
+                                <Umbrella size={64} className="text-green-600 mx-auto mb-6" />
                                 <h2 className="text-4xl font-bold mb-6">Mitigation & Restoration</h2>
                                 <p className="text-xl text-gray-600 mb-8">
                                     Immediate action to prevent further damage is critical. We provide emergency tarping, water damage mitigation, and full restoration services to secure your property while the claim is processed.
                                 </p>
-                                <div className="bg-blue-50 p-8 rounded-xl border border-blue-100 mb-8">
+                                <div className="bg-green-50 p-8 rounded-xl border border-green-100 mb-8">
                                     <h3 className="text-2xl font-bold mb-4">Emergency Services Available 24/7</h3>
                                     <p className="mb-0">For urgent tarping or leak stops, contact us immediately.</p>
                                 </div>
-                                <button className="cursor-pointer bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
+                                <button className="cursor-pointer bg-green-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors">
                                     Request Emergency Service
                                 </button>
                             </div>
@@ -262,7 +262,7 @@ const InsuranceClaimPage = () => {
                                 <p className="text-xl text-gray-600 mb-8">
                                     When damage is extensive, a full replacement is often the only viable option. We work with your insurance to ensure the full value of the replacement is covered, upgrading you to modern, durable materials.
                                 </p>
-                                <Link to="/roof-replacement" className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
+                                <Link to="/roof-replacement" className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors">
                                     View Roof Replacement Details
                                 </Link>
                             </div>

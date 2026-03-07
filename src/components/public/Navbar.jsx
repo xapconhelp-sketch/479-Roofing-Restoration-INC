@@ -46,8 +46,8 @@ const Navbar = () => {
                 <div className="logo-outer-container">
                     <Link to="/" onClick={closeMobile}>
                         <img
-                            src={isScrolledState ? "/logo-scrolled.png" : "/new-logo-desktop.png"}
-                            alt="Skyshape Roofing"
+                            src="/Recurso1.png"
+                            alt="479 Roofing Restoration"
                             className="navbar-logo"
                         />
                     </Link>
@@ -63,6 +63,17 @@ const Navbar = () => {
                 </button>
 
                 <div className={`navbar-inner-container ${mobileOpen ? 'mobile-show' : ''}`}>
+                    {/* Inner Logo (visible on scroll) */}
+                    <div className="logo-container">
+                        <Link to="/" onClick={closeMobile}>
+                            <img
+                                src="/Recurso1.png"
+                                alt="479 Roofing Restoration"
+                                className="navbar-logo-inner"
+                            />
+                        </Link>
+                    </div>
+
                     <div className="menu-column">
                         <div className="main-nav-row">
                             <ul className="nav-links">
@@ -72,7 +83,6 @@ const Navbar = () => {
                                 <li><Link to="/roofing" onClick={closeMobile}>Roofing</Link></li>
 
                                 <li><Link to="/commercial-roofing" onClick={closeMobile}>Commercial Roofing</Link></li>
-                                <li><Link to="/solar-panel" onClick={closeMobile}>Solar Panel</Link></li>
                                 <li><Link to="/financing" onClick={closeMobile}>Financing</Link></li>
                             </ul>
 

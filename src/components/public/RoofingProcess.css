@@ -103,7 +103,7 @@
 
 .rp-icon-wrapper.blue-icon {
     background-color: #e0f2fe;
-    color: #016CD6;
+    color: #27A844;
 }
 
 .rp-icon-wrapper.dark-icon {
@@ -113,8 +113,8 @@
 
 .rp-action-call {
     font-size: 1.1rem;
-    color: #016CD6;
-    border-left: 4px solid #016CD6;
+    color: #27A844;
+    border-left: 4px solid #27A844;
     padding-left: 16px;
     font-weight: 600;
 }
@@ -138,7 +138,7 @@
 }
 
 .check-icon {
-    color: #016CD6;
+    color: #27A844;
 }
 
 /* Decision Section */
@@ -187,15 +187,15 @@
 }
 
 .btn-insurance {
-    background-color: #016CD6;
+    background-color: #27A844;
     color: white;
-    box-shadow: 0 10px 15px -3px rgba(1, 108, 214, 0.3);
+    box-shadow: 0 10px 15px -3px rgba(39, 168, 68, 0.3);
 }
 
 .btn-insurance:hover {
     background-color: #0256ab;
     transform: translateY(-2px);
-    box-shadow: 0 15px 20px -3px rgba(1, 108, 214, 0.4);
+    box-shadow: 0 15px 20px -3px rgba(39, 168, 68, 0.4);
 }
 
 .btn-retail {
@@ -267,7 +267,7 @@
 
 .card-icon-box {
     margin-bottom: 24px;
-    color: #016CD6;
+    color: #27A844;
 }
 
 .highlight-card .card-icon-box {
@@ -316,8 +316,8 @@
 
 .btn-quote-action {
     background-color: #ef4444;
-    /* A red CTA or Skyshape Blue */
-    background-color: #016CD6;
+    /* A red CTA or 479 Roofing Restoration green */
+    background-color: #27A844;
     color: white;
     font-size: 1.25rem;
     font-weight: 800;
@@ -325,14 +325,14 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    box-shadow: 0 10px 15px -3px rgba(1, 108, 214, 0.4);
+    box-shadow: 0 10px 15px -3px rgba(39, 168, 68, 0.4);
     transition: all 0.3s ease;
 }
 
 .btn-quote-action:hover {
     background-color: #0256ab;
     transform: translateY(-3px);
-    box-shadow: 0 15px 25px -3px rgba(1, 108, 214, 0.5);
+    box-shadow: 0 15px 25px -3px rgba(39, 168, 68, 0.5);
 }
 
 /* Responsiveness */
