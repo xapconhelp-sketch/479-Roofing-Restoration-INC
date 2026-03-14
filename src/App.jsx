@@ -16,6 +16,7 @@ const ThankYouPage = React.lazy(() => import('./pages/ThankYouPage'));
 const FinancingPage = React.lazy(() => import('./pages/FinancingPage'));
 const CommercialRoofingPage = React.lazy(() => import('./pages/CommercialRoofingPage'));
 const InsuranceClaimPage = React.lazy(() => import('./pages/InsuranceClaimPage'));
+const SolarPanelPage = React.lazy(() => import('./pages/SolarPanelPage'));
 
 // Dashboard lazy imports
 const Overview = React.lazy(() => import('./pages/dashboard/Overview'));
@@ -49,6 +50,7 @@ function App() {
             <Route path="/financing" element={<FinancingPage />} />
             <Route path="/commercial-roofing" element={<CommercialRoofingPage />} />
             <Route path="/insurance-claim" element={<InsuranceClaimPage />} />
+            <Route path="/solar-panels" element={<SolarPanelPage />} />
             <Route path="/thank-you" element={<ThankYouPage />} />
           </Route>
 

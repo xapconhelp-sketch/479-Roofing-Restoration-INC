@@ -52,6 +52,19 @@ const RoofRepairPage = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Final CTA Section */}
+            <section className="repair-final-cta text-center" style={{ padding: '100px 0', backgroundColor: '#F8FAFC', borderTop: '1px solid #e2e8f0' }}>
+                <div className="container">
+                    <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '24px', color: '#0f172a' }}>Don't Let a Small Leak Become a Big Problem.</h2>
+                    <p style={{ fontSize: '1.25rem', color: '#64748b', marginBottom: '40px', maxWidth: '700px', margin: '0 auto 40px' }}>
+                        Contact Rogers' most trusted repair specialists for a comprehensive inspection and honest solution.
+                    </p>
+                    <button className="btn-repair-primary">
+                        Schedule My Repair Inspection <ArrowRight size={20} />
+                    </button>
+                </div>
+            </section>
         </div>
     );
 };

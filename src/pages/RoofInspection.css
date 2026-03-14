@@ -81,7 +81,7 @@
     font-size: 1rem;
     font-weight: 700;
     color: var(--primary-green);
-    background-color: rgba(0, 123, 255, 0.1);
+    background-color: rgba(39, 168, 68, 0.1);
     padding: 4px 10px;
     border-radius: 6px;
     font-family: monospace;
@@ -150,7 +150,7 @@
 .check-icon-circle {
     width: 24px;
     height: 24px;
-    background-color: rgba(0, 123, 255, 0.1);
+    background-color: rgba(39, 168, 68, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -179,13 +179,13 @@
     align-items: center;
     gap: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px -1px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 4px 6px -1px rgba(39, 168, 68, 0.2);
 }
 
 .btn-primary-solid:hover {
     background-color: #1e8a35;
     transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 10px 15px -3px rgba(39, 168, 68, 0.3);
 }
 
 /* Gallery Grid (Right Column) */

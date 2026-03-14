@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Layers, ShieldCheck, Trash2, Droplets, FileText, Maximize2, MapPin, TriangleAlert, CheckCircle, ArrowRight } from 'lucide-react';
+import { Home, Layers, ShieldCheck, Trash2, Droplets, FileText, Maximize2, MapPin, TriangleAlert, CheckCircle, ArrowRight, DollarSign } from 'lucide-react';
 import './RoofReplacementPage.css';
 
 const RoofReplacementPage = () => {
@@ -30,7 +30,7 @@ const RoofReplacementPage = () => {
                 <div className="container standard-grid">
                     <div className="standard-image-wrapper">
                         <img
-                            src="/Gemini_Generated.png"
+                            src="/roof_replacement_hero.png"
                             alt="Beautiful home with new roof"
                             className="standard-image"
                         />
@@ -131,6 +131,51 @@ const RoofReplacementPage = () => {
                             Start My Itemized Estimate
                         </button>
                     </div>
+                </div>
+            </section>
+
+            {/* Financing Section */}
+            <section className="financing-section">
+                <div className="container">
+                    <div className="financing-banner">
+                        <div className="financing-image-wrapper">
+                            <img
+                                src="/temporalremplazo.png"
+                                alt="Modern home with new roof"
+                                className="financing-image"
+                            />
+                        </div>
+                        <div className="financing-content">
+                            <div className="financing-icon-wrapper">
+                                <DollarSign size={28} />
+                            </div>
+                            <h2 className="financing-headline">Roof Now. Pay Later.</h2>
+                            <p className="financing-text">
+                                Don't let budget constraints delay your home's protection. 479 Roofing Restoration offers flexible financing solutions with 0% interest options for qualified homeowners in Rogers.
+                            </p>
+                            <div className="cta-wrapper">
+                                <button className="btn-standard">
+                                    Explore Financing Options
+                                </button>
+                                <span className="financing-note">
+                                    *Subject to credit approval. Terms and conditions apply.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Final CTA Section */}
+            <section className="replacement-final-cta text-center" style={{ padding: '100px 0', backgroundColor: '#F8FAFC' }}>
+                <div className="container">
+                    <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '24px', color: '#0f172a' }}>Ready to Invest in Your Home?</h2>
+                    <p style={{ fontSize: '1.25rem', color: '#64748b', marginBottom: '40px', maxWidth: '700px', margin: '0 auto 40px' }}>
+                        Join hundreds of satisfied Rogers homeowners who trust 479 Roofing Restoration for their replacement projects.
+                    </p>
+                    <button className="btn-hero-primary">
+                        Schedule My Free Replacement Estimate <ArrowRight size={20} />
+                    </button>
                 </div>
             </section>
         </div>

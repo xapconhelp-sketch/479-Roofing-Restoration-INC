@@ -76,14 +76,14 @@
     align-items: center;
     gap: 10px;
     /* Subtle green glow on dark background */
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.35), 0 4px 12px rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 20px rgba(39, 168, 68, 0.35), 0 4px 12px rgba(39, 168, 68, 0.25);
 }
 
 .btn-hero-primary:hover {
     background-color: #1e8a35;
     transform: translateY(-2px);
     /* Intensified glow on hover */
-    box-shadow: 0 0 30px rgba(0, 123, 255, 0.5), 0 10px 20px -3px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 0 30px rgba(39, 168, 68, 0.5), 0 10px 20px -3px rgba(39, 168, 68, 0.4);
 }
 
 /* Standard Section (Visual Specs) */
@@ -308,13 +308,13 @@
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px -1px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4px 6px -1px rgba(39, 168, 68, 0.3);
 }
 
 .btn-pricing-cta:hover {
     background-color: #1e8a35;
     transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 10px 15px -3px rgba(39, 168, 68, 0.4);
 }
 
 /* ========================= */

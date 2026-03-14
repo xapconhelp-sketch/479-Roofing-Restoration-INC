@@ -1,55 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Star, ShieldCheck, Award, FileSearch, FileText, Users, Scale, CloudLightning, BadgeCheck, Zap, Umbrella, TreeDeciduous, Home } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BadgeCheck, FileSearch, PhoneCall, Users, FileText, AlertTriangle, Hammer, ShieldCheck, Image as ImageIcon } from 'lucide-react';
 import './InsuranceClaimPage.css';
 
-const claimsData = [
-    {
-        title: "Inspection & Documentation",
-        description: "Our team conducts a thorough inspection to assess the damage, accompanied by detailed documentation to support your claim. We make certain nothing is overlooked for maximum recovery.",
-        icon: <FileSearch size={28} />
-    },
-    {
-        title: "Filing the Claim",
-        description: "We guide you through the paperwork, helping ensure all forms are meticulously completed and submitted. Our understanding of the process positions your claim effectively from the outset.",
-        icon: <FileText size={28} />
-    },
-    {
-        title: "Coordination with Adjusters",
-        description: "We communicate effectively with adjusters, advocating for a fair assessment of your claim using negotiation techniques that protect your best interests.",
-        icon: <Users size={28} />
-    },
-    {
-        title: "Approval & Repairs",
-        description: "Upon approval, we proceed with high-quality repairs backed by a three-year labor warranty and supported by certifications from leading manufacturers.",
-        icon: <ShieldCheck size={28} />
-    },
-    {
-        title: "Severe Weather Expertise",
-        description: "We use local weather data to anticipate risks from Rogers's intense thunderstorms and hail, proactively preparing your roof for our specific climate challenges.",
-        icon: <CloudLightning size={28} />
-    },
-    {
-        title: "Local Ordinances & Compliance",
-        description: "We know Rogers's building codes and permit requirements inside out, ensuring full compliance and a smooth, delay-free administrative process for your project.",
-        icon: <Scale size={28} />
-    }
-];
-
 const InsuranceClaimPage = () => {
-    const [activeTab, setActiveTab] = useState('what-is');
-
     // Scroll to top on mount
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-
-    const tabs = [
-        { id: 'what-is', label: '¿Qué es?', icon: <FileText size={18} /> },
-        { id: 'mitigation', label: 'Mitigación y Restauración', icon: <Umbrella size={18} /> },
-        { id: 'tree-removal', label: 'Tree Removal', icon: <TreeDeciduous size={18} /> },
-        { id: 'replacement', label: 'Replacement', icon: <Home size={18} /> }
-    ];
 
     return (
         <div className="insurance-page">
@@ -63,214 +20,146 @@ const InsuranceClaimPage = () => {
                     </div>
                     <h1 className="insurance-headline">Simplify Your Insurance Claim</h1>
                     <p className="insurance-subheadline">
-                        Navigating property damage claims can be complex. We guide you every step of the way to ensure fair coverage and quality restoration.
+                        Navigating property damage claims can be complex. We guide you through our proven 7-step process to ensure fair coverage and a high-quality restoration.
                     </p>
                 </div>
             </section>
 
-            {/* Tab Navigation */}
-            <section className="tabs-navigation-section">
+            {/* 7-Step Process Content */}
+            <section className="process-content-section">
                 <div className="container">
-                    <div className="tabs-wrapper">
-                        {tabs.map((tab) => (
-                            <button
-                                key={tab.id}
-                                className={`tab-button ${activeTab === tab.id ? 'active' : ''}`}
-                                onClick={() => setActiveTab(tab.id)}
-                            >
-                                {tab.icon}
-                                {tab.label}
-                            </button>
-                        ))}
+
+                    <div className="steps-container">
+                        
+                        {/* Step 1 */}
+                        <div className="step-card">
+                            <div className="step-number text-green-600">01</div>
+                            <div className="step-content">
+                                <h3 className="flex items-center gap-3 text-2xl font-bold mb-4 text-gray-900">
+                                    <FileSearch className="text-green-600" />
+                                    The Roof Health Inspection (Post-Storm)
+                                </h3>
+                                <p className="mb-4 text-gray-700">Before calling your insurance, you need to know if there is actually damage that justifies a claim.</p>
+                                <ul className="list-disc pl-5 mb-4 text-gray-700 space-y-2">
+                                    <li><strong>Hail:</strong> We look for "bruises" or dents in the shingles that break the granule layer, exposing the asphalt to the sun.</li>
+                                    <li><strong>Wind:</strong> We look for lifted, detached, or "creased" shingles, where the adhesive seal has broken.</li>
+                                </ul>
+                                <div className="action-box">
+                                    <p className="action-box-text"><strong>479 Roofing Action:</strong> We document this with high-resolution photos and damage maps so you have solid evidence before opening the case.</p>
+                                </div>
+                                {/* Image Step 1 */}
+                                <div className="step-image-container">
+                                    <img src="/Inspeccion.jpg" alt="Roof Inspection Documented" className="step-image" />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Step 2 */}
+                        <div className="step-card">
+                            <div className="step-number text-green-600">02</div>
+                            <div className="step-content">
+                                <h3 className="flex items-center gap-3 text-2xl font-bold mb-4 text-gray-900">
+                                    <PhoneCall className="text-green-600" />
+                                    Filing the Claim
+                                </h3>
+                                <p className="mb-4 text-gray-700">Once we confirm the damage, you as the homeowner must contact your insurance company.</p>
+                                <div className="action-box">
+                                    <p className="action-box-text"><strong>479 Roofing Tip:</strong> Provide the exact date of the storm. We will help you identify it using certified meteorological reports.</p>
+                                </div>
+                                <p className="text-gray-700"><strong>Claim Number:</strong> You will be assigned a number that will be the "ID" of your project going forward.</p>
+                            </div>
+                        </div>
+
+                        {/* Step 3 */}
+                        <div className="step-card">
+                            <div className="step-number text-green-600">03</div>
+                            <div className="step-content">
+                                <h3 className="flex items-center gap-3 text-2xl font-bold mb-4 text-gray-900">
+                                    <Users className="text-green-600" />
+                                    The Adjuster Meeting
+                                </h3>
+                                <p className="mb-4 text-gray-700">The insurance company will send an adjuster to evaluate the damage. This is the most important step.</p>
+                                <div className="space-y-4 mb-4">
+                                    <p className="text-gray-700"><strong>Our Role:</strong> 479 Roofing will be present there. We speak the same technical "language" as the adjuster. We make sure they don't overlook details like the drip edge, starter shingles, or compliance with local codes.</p>
+                                    <p className="text-gray-700"><strong>Code Defense:</strong> If you are in Arkansas, we will remind the adjuster that, according to code R908.3.1.1, a full replacement must meet new construction standards.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Step 4 */}
+                        <div className="step-card">
+                            <div className="step-number text-green-600">04</div>
+                            <div className="step-content">
+                                <h3 className="flex items-center gap-3 text-2xl font-bold mb-4 text-gray-900">
+                                    <FileText className="text-green-600" />
+                                    Estimate Review (Xactimate)
+                                </h3>
+                                <p className="mb-4 text-gray-700">The insurance company will send you a document called a "Scope of Loss".</p>
+                                <ul className="list-disc pl-5 mb-4 text-gray-700 space-y-2">
+                                    <li><strong>Technical Analysis:</strong> We review that every line is fair. If they omitted ridge caps or the ice & water shield required by code R905.2.8.2, we prepare a Supplement.</li>
+                                    <li><strong>Supplements:</strong> This is the process where we ask the insurance company to add items necessary for construction that were not initially included.</li>
+                                </ul>
+                                {/* Image Step 4 */}
+                                <div className="step-image-container">
+                                    <img src="/insurance.png" alt="Insurance Estimate" className="step-image" />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Step 5 */}
+                        <div className="step-card highlight-card">
+                            <div className="step-number text-red-500">05</div>
+                            <div className="step-content">
+                                <h3 className="flex items-center gap-3 text-2xl font-bold mb-4 text-red-700">
+                                    <AlertTriangle className="text-red-600" />
+                                    THE DEDUCTIBLE (Non-Negotiable Point)
+                                </h3>
+                                <p className="mb-4 text-gray-800 font-medium">It is vital that we speak honestly about this: The homeowner is legally responsible for paying their deductible.</p>
+                                <div className="space-y-4 text-gray-700">
+                                    <p><strong>The Law:</strong> In most states, including Arkansas and Kansas, it is illegal (and considered insurance fraud) for a contractor to "absorb", "forgive", or "pay" the client's deductible through inflated invoices or fake rebates.</p>
+                                    <p><strong>Transparency:</strong> 479 Roofing operates under the highest ethical standards. Your deductible is your only investment in a new roof that could be worth $15,000 or $30,000. We take care of maximizing every penny the insurance pays, but the deductible is your part of the contract.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Step 6 */}
+                        <div className="step-card">
+                            <div className="step-number text-green-600">06</div>
+                            <div className="step-content">
+                                <h3 className="flex items-center gap-3 text-2xl font-bold mb-4 text-gray-900">
+                                    <Hammer className="text-green-600" />
+                                    Production and Replacement
+                                </h3>
+                                <p className="mb-4 text-gray-700">With the approved budget, we proceed with the installation.</p>
+                                <ul className="list-disc pl-5 mb-6 text-gray-700 space-y-2">
+                                    <li><strong>Tear-off:</strong> We remove everything down to the wood to inspect the condition of the decking.</li>
+                                    <li><strong>Code-Compliant Installation:</strong> We install new underlayment according to R905.1.1 and drip edges according to R905.2.8.5 to ensure your roof is legal and durable.</li>
+                                </ul>
+                                {/* Image Step 6 */}
+                                <div className="step-image-container">
+                                    <img src="/fondo.png" alt="Roof Production Flow" className="step-image" />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Step 7 */}
+                        <div className="step-card">
+                            <div className="step-number text-green-600">07</div>
+                            <div className="step-content">
+                                <h3 className="flex items-center gap-3 text-2xl font-bold mb-4 text-gray-900">
+                                    <ShieldCheck className="text-green-600" />
+                                    Closure and Release of Funds
+                                </h3>
+                                <div className="space-y-4 text-gray-700">
+                                    <p><strong>Depreciation:</strong> Upon completion, we send a final invoice and a Certificate of Completion. This notifies the insurance that the work is done and they can release the second check (the held depreciation).</p>
+                                    <p><strong>Warranty:</strong> We deliver your 479 Roofing workmanship warranties and the manufacturer's warranties.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
-
-            {/* Tab Content: What Is */}
-            {activeTab === 'what-is' && (
-                <div className="tab-content fade-in">
-                    {/* What Is An Insurance Claim? */}
-                    <section className="info-section">
-                        <div className="container">
-                            <div className="info-grid">
-                                <div className="info-content">
-                                    <h2>What is an Insurance Claim?</h2>
-                                    <p>
-                                        An insurance claim is a formal request by a policyholder to an insurance company for coverage or compensation for a covered loss or policy event.
-                                    </p>
-                                    <p>
-                                        In the roofing industry, this typically involves damage caused by unforeseen events such as <strong>hail storms, high winds, fallen trees, or severe weather</strong>. Instead of paying out-of-pocket for expensive repairs, your homeowner's insurance policy is designed to cover these restoration costs, minus your deductible.
-                                    </p>
-                                </div>
-                                <div className="info-image-container">
-                                    <div className="insurance-logos-grid">
-                                        <div className="insurance-logo-item">
-                                            <img src="/state-farm.jpg" alt="State Farm" />
-                                        </div>
-                                        <div className="insurance-logo-item">
-                                            <img src="/allstate.png" alt="Allstate" />
-                                        </div>
-                                        <div className="insurance-logo-item">
-                                            <img src="/usaa.jpg" alt="USAA" />
-                                        </div>
-                                        <div className="insurance-logo-item">
-                                            <img src="/liberty-mutual.png" alt="Liberty Mutual" />
-                                        </div>
-                                        <div className="insurance-logo-item">
-                                            <img src="/farmers.png" alt="Farmers" />
-                                        </div>
-                                        <div className="insurance-logo-item">
-                                            <img src="/american-family.png" alt="American Family" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* Why File a Claim? */}
-                    <section className="why-section">
-                        <div className="container">
-                            <div className="info-grid why-content">
-                                {/* Image Column (Left on Desktop) */}
-                                <div className="info-image-container order-2 lg:order-1">
-                                    <img
-                                        src="/storm-damage.png"
-                                        alt="Storm Damage Repair"
-                                        className="info-image"
-                                    />
-                                </div>
-
-                                {/* Content Column (Right on Desktop) */}
-                                <div className="info-content order-1 lg:order-2">
-                                    <h2 className="section-title-navy">Why file a claim?</h2>
-
-                                    <div className="claim-reason-block">
-                                        <div className="reason-icon-wrapper">
-                                            <Home size={24} strokeWidth={1.5} />
-                                        </div>
-                                        <p>
-                                            You may consider filing a claim when, after a storm, we identify that there may be damage to your property, whether to the roof, siding, gutters, or any other part of your home.
-                                        </p>
-                                    </div>
-
-                                    <div className="claim-reason-block">
-                                        <div className="reason-icon-wrapper">
-                                            <FileSearch size={24} strokeWidth={1.5} />
-                                        </div>
-                                        <p>
-                                            You can also file a claim when you authorize a company like ours to inspect your home and we find enough damage to consider that the insurance will cover some or all of the damage.
-                                        </p>
-                                    </div>
-
-                                    <div className="claim-reason-block">
-                                        <div className="reason-icon-wrapper">
-                                            <ShieldCheck size={24} strokeWidth={1.5} />
-                                        </div>
-                                        <p>
-                                            <strong>It is your right.</strong> You pay premiums precisely for this purpose. Using your coverage for legitimate damage is the reason you have insurance.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* The Process Section (Moved from Home) */}
-                    <section className="process-grid-section">
-                        <div className="container">
-                            <div className="text-center mb-16">
-                                <h2 className="section-title text-4xl font-extrabold text-gray-900 mb-4">The Roofing Insurance Claims Process</h2>
-                                <p className="section-subtitle text-xl text-gray-500">Handling claims can be daunting, but we make it straightforward.</p>
-                            </div>
-
-                            <div className="claims-grid-styled">
-                                {claimsData.map((claim, index) => (
-                                    <div key={index} className="claim-card-styled">
-                                        <div className="icon-wrapper-styled">
-                                            {claim.icon}
-                                        </div>
-                                        <h3>{claim.title}</h3>
-                                        <p>{claim.description}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            )}
-
-            {/* Tab Content: Mitigation */}
-            {activeTab === 'mitigation' && (
-                <div className="tab-content fade-in">
-                    <section className="info-section">
-                        <div className="container text-center">
-                            <div className="max-w-3xl mx-auto">
-                                <Umbrella size={64} className="text-green-600 mx-auto mb-6" />
-                                <h2 className="text-4xl font-bold mb-6">Mitigation & Restoration</h2>
-                                <p className="text-xl text-gray-600 mb-8">
-                                    Immediate action to prevent further damage is critical. We provide emergency tarping, water damage mitigation, and full restoration services to secure your property while the claim is processed.
-                                </p>
-                                <div className="bg-green-50 p-8 rounded-xl border border-green-100 mb-8">
-                                    <h3 className="text-2xl font-bold mb-4">Emergency Services Available 24/7</h3>
-                                    <p className="mb-0">For urgent tarping or leak stops, contact us immediately.</p>
-                                </div>
-                                <button className="cursor-pointer bg-green-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors">
-                                    Request Emergency Service
-                                </button>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            )}
-
-            {/* Tab Content: Tree Removal */}
-            {activeTab === 'tree-removal' && (
-                <div className="tab-content fade-in">
-                    <section className="info-section">
-                        <div className="container text-center">
-                            <div className="max-w-3xl mx-auto">
-                                <TreeDeciduous size={64} className="text-green-600 mx-auto mb-6" />
-                                <h2 className="text-4xl font-bold mb-6">Emergency Tree Removal</h2>
-                                <p className="text-xl text-gray-600 mb-8">
-                                    Fallen trees on your roof pose a severe structural threat. Our team safely removes debris and trees caused by storms, ensuring no further damage occurs to your home during the process.
-                                </p>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                                    <div className="p-6 bg-white shadow-md rounded-lg border border-gray-100">
-                                        <h3 className="font-bold text-lg mb-2">Safe Extraction</h3>
-                                        <p className="text-gray-600">Specialized equipment to lift trees without crushing your structure.</p>
-                                    </div>
-                                    <div className="p-6 bg-white shadow-md rounded-lg border border-gray-100">
-                                        <h3 className="font-bold text-lg mb-2">Debris Cleanup</h3>
-                                        <p className="text-gray-600">We haul away all wood and debris, leaving your property clean.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            )}
-
-            {/* Tab Content: Replacement */}
-            {activeTab === 'replacement' && (
-                <div className="tab-content fade-in">
-                    <section className="info-section">
-                        <div className="container text-center">
-                            <div className="max-w-3xl mx-auto">
-                                <Home size={64} className="text-orange-500 mx-auto mb-6" />
-                                <h2 className="text-4xl font-bold mb-6">Full Roof Replacement</h2>
-                                <p className="text-xl text-gray-600 mb-8">
-                                    When damage is extensive, a full replacement is often the only viable option. We work with your insurance to ensure the full value of the replacement is covered, upgrading you to modern, durable materials.
-                                </p>
-                                <Link to="/roof-replacement" className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors">
-                                    View Roof Replacement Details
-                                </Link>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            )}
-
         </div>
     );
 };

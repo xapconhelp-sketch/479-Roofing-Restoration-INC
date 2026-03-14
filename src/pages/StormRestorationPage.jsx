@@ -13,9 +13,9 @@ const StormRestorationPage = () => {
                         <span>24/7 Emergency Service</span>
                     </div>
 
-                    <h1 className="storm-headline">Storm Damage? Please, Don't Panic.<br />We’re Your First Response.</h1>
+                    <h1 className="storm-headline">Storm Damage in Rogers?<br />We’re Your Local First Response.</h1>
                     <p className="storm-subheadline">
-                        From emergency tarping to full insurance claim representation, we restore your home and your peace of mind when nature strikes.
+                        From emergency tarping to full insurance claim representation, 479 Roofing Restoration protects Northwest Arkansas homes when severe weather strikes. Don't panic, call the local experts.
                     </p>
 
                     <div className="hero-actions">
@@ -67,6 +67,38 @@ const StormRestorationPage = () => {
                 </div>
             </section>
 
+            {/* Partners Strip (Insurance Carriers) */}
+            <section className="partners-strip">
+                <div className="container">
+                    <p className="partners-label">We Work With All Major Insurance Carriers</p>
+                    <div className="partners-logos-text">
+                        <span>STATE FARM</span>
+                        <div className="separator">●</div>
+                        <span>ALLSTATE</span>
+                        <div className="separator">●</div>
+                        <span>LIBERTY MUTUAL</span>
+                        <div className="separator">●</div>
+                        <span>GEICO</span>
+                        <div className="separator">●</div>
+                        <span>USA A</span>
+                        <div className="separator">●</div>
+                        <span>FARMERS</span>
+                    </div>
+                </div>
+            </section>
+
+            {/* Final CTA Section */}
+            <section className="storm-final-cta">
+                <div className="container text-center">
+                    <h2 className="final-cta-title">Don't Wait for the Next Storm to Hit.</h2>
+                    <p className="final-cta-subtitle">
+                        Get a professional assessment today and ensure your home is ready for whatever Northwest Arkansas weather brings.
+                    </p>
+                    <button className="btn-storm-primary">
+                        Get My Free Assessment <ArrowRight size={20} />
+                    </button>
+                </div>
+            </section>
         </div>
     );
 };

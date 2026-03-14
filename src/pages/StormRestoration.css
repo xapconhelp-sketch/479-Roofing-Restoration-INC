@@ -1,6 +1,6 @@
 /* Page Base */
 .storm-page {
-    
+    padding: 0;
 }
 
 /* Hero Section */
@@ -94,7 +94,7 @@
     background-color: #1e8a35;
     /* Darker green */
     transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 10px 15px -3px rgba(39, 168, 68, 0.4);
 }
 
 .repair-img-main {
@@ -379,3 +379,24 @@
         padding: 32px 0;
     }
 }
+
+/* Storm Final CTA */
+.storm-final-cta {
+    padding: 100px 0;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+.final-cta-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.final-cta-subtitle {
+    font-size: 1.125rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}

@@ -5,28 +5,36 @@ import './ReviewsSection.css';
 // Mock Data simulating Google Places API response
 const reviews = [
     {
-        author_name: "Sarah Thompson",
-        profile_photo_url: "https://lh3.googleusercontent.com/a-/ALV-UjWab1...=s128-c0x00000000-cc-rp-mo", // Placeholder logic in CSS
-        rating: 5,
-        relative_time_description: "2 months ago",
-        text: "479 Roofing Restoration transformed our home! The team was professional, cleaned up perfectly, and finished ahead of schedule. The new roof looks absolutely amazing. Highly recommended for anyone in Rogers!",
-        google_url: "#"
-    },
-    {
-        author_name: "Michael Rodriguez",
-        profile_photo_url: null, // Will use default avatar
-        rating: 5,
-        relative_time_description: "1 month ago",
-        text: "Transparent pricing and excellent communication throughout the entire process. They handled the insurance claim directly with my adjuster, making it a stress-free experience. 5 stars!",
-        google_url: "#"
-    },
-    {
-        author_name: "Emily Jenkins",
+        author_name: "Ranfery Arreola",
         profile_photo_url: null,
         rating: 5,
-        relative_time_description: "3 weeks ago",
-        text: "We had a severe storm damage our shingles. 479 Roofing Restoration came out the next day, gave a fair estimate, and the repair was seamless. You can't even tell where the damage was. Thank you!",
-        google_url: "#"
+        relative_time_description: "Hace un mes",
+        text: "Chicos altamente capacitados vinieron a mi casa y me informaron sobre los daños causados por la tormenta en mi casa y lograron que el seguro lo aprobara por completo. Recomiendo ampliamente 479 Roofing Restoration.",
+        google_url: "https://maps.app.goo.gl/VQGk3q9XwpwGyYVcA"
+    },
+    {
+        author_name: "Yoni Perez",
+        profile_photo_url: null,
+        rating: 5,
+        relative_time_description: "Hace un mes",
+        text: "479roofing&restoration Yonatan monjaras y Saul Martínez hicieron un gran trabajo en mi opinión los recomiendo en el estado de Arkansas 👍…",
+        google_url: "https://maps.app.goo.gl/VQGk3q9XwpwGyYVcA"
+    },
+    {
+        author_name: "Devin Talberg",
+        profile_photo_url: null,
+        rating: 5,
+        relative_time_description: "Hace un año",
+        text: "Una gran empresa con la que trabajar. Estos chicos saben lo que hacen. Muy profesionales. Asegurados, con licencia. ¡Y un equipo rapidísimo!",
+        google_url: "https://maps.app.goo.gl/VQGk3q9XwpwGyYVcA"
+    },
+    {
+        author_name: "Tony Martinez",
+        profile_photo_url: null,
+        rating: 5,
+        relative_time_description: "Hace 11 meses",
+        text: "Excelente trabajo muy profesionales gracias",
+        google_url: "https://maps.app.goo.gl/VQGk3q9XwpwGyYVcA"
     }
 ];
 
@@ -37,15 +45,15 @@ const ReviewsSection = () => {
                 <div className="reviews-header text-center mb-16">
                     <div className="google-badge">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="google-logo" />
-                        <span className="review-count">Excellent 5.0</span>
+                        <span className="review-count">Excellent 4.8</span>
                         <div className="stars-row">
                             {[...Array(5)].map((_, i) => (
-                                <Star key={i} size={16} fill="#F4B400" stroke="none" />
+                                <Star key={i} size={16} fill={i < 4.8 ? "#F4B400" : "#E0E0E0"} stroke="none" />
                             ))}
                         </div>
                     </div>
                     <h2 className="section-title">What Our Clients Say</h2>
-                    <p className="section-subtitle">Real feedback from verified homeowners.</p>
+                    <p className="section-subtitle">Real feedback from verified homeowners in Arkansas.</p>
                 </div>
 
                 <div className="reviews-grid">
@@ -88,9 +96,12 @@ const ReviewsSection = () => {
                     ))}
                 </div>
 
-                <div className="reviews-cta text-center mt-12">
-                    <a href="#" className="btn-google-reviews" target="_blank" rel="noopener noreferrer">
-                        See all reviews on Google
+                <div className="reviews-cta text-center mt-12 flex flex-col items-center gap-4">
+                    <a href="https://g.page/r/CWnSM1jvNOvKEAI/review" className="btn-google-reviews" target="_blank" rel="noopener noreferrer">
+                        Write a Review on Google
+                    </a>
+                    <a href="https://maps.app.goo.gl/VQGk3q9XwpwGyYVcA" className="text-slate-600 hover:text-slate-900 font-medium underline" target="_blank" rel="noopener noreferrer">
+                        See all 16 reviews on Google Maps
                     </a>
                 </div>
             </div>

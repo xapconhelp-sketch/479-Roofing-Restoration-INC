@@ -247,7 +247,7 @@
 
 /* Hover State - Micro-interaction */
 .dropdown-menu li a:hover {
-    background-color: rgba(0, 123, 255, 0.06);
+    background-color: rgba(39, 168, 68, 0.06);
     /* Ultra-light green bg */
     color: #27A844 !important;
     /* Turn text green */
@@ -313,7 +313,10 @@
 
 /* Scrolled Logo Style */
 
-
+/* Mobile Scroll Logo — hidden on desktop always */
+.mobile-scroll-logo {
+    display: none;
+}
 
 /* Menu Column */
 .menu-column {
@@ -340,8 +343,14 @@
 }
 
 .navbar-wrapper.scrolled .top-bar-row {
-    border-bottom-color: rgba(255, 255, 255, 0.2);
-    /* Keep light border on green bg */
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    /* Darker border for light background */
+}
+
+/* Make top bar text dark on scroll */
+.navbar-wrapper.scrolled .top-bar-links a,
+.navbar-wrapper.scrolled .top-bar-contact {
+    color: var(--text-primary);
 }
 
 .top-bar-links {
@@ -438,8 +447,12 @@
     }
 
     .navbar-wrapper {
-        padding: 25px 0;
-        /* Updated to 25px as requested */
+        padding: 16px 0; /* Default mobile padding */
+    }
+
+    /* Give more height when scrolled so the logo fits symmetrically */
+    .navbar-wrapper.scrolled {
+        padding: 14px 0;
     }
 
     .navbar-wrapper.mobile-open {
@@ -462,12 +475,41 @@
         transition: opacity 0.3s ease;
     }
 
-    /* Show logo on scroll or when mobile menu is open */
-    .navbar-wrapper.scrolled .logo-outer-container,
+    /* On mobile: only show the floating logo when the menu is open (scroll uses mobile-scroll-logo) */
     .navbar-wrapper.mobile-open .logo-outer-container {
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
+    }
+
+    /* Keep floating logo hidden on scroll in mobile (use mobile-scroll-logo instead) */
+    .navbar-wrapper.scrolled .logo-outer-container {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    /* Mobile scroll logo: hidden until user scrolls */
+    .mobile-scroll-logo {
+        display: none; /* Off by default */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        pointer-events: auto;
+    }
+
+    /* Show when scrolled AND menu is NOT open */
+    .navbar-wrapper.scrolled:not(.mobile-open) .mobile-scroll-logo {
+        display: block;
+    }
+
+    .mobile-scroll-logo-img {
+        height: 34px;    /* Reduced to fit cleanly inside header */
+        width: auto;
+        object-fit: contain;
+        display: block;
     }
 
     .navbar-logo {

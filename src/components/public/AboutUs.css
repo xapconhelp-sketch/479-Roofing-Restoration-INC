@@ -195,7 +195,7 @@
 .about-team-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 25px 50px -12px rgba(0, 30, 80, 0.12);
-    border-color: rgba(0, 123, 255, 0.2);
+    border-color: rgba(39, 168, 68, 0.2);
 }
 
 .about-team-photo-wrapper {

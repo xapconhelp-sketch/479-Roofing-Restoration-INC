@@ -62,6 +62,17 @@ const Navbar = () => {
                     {mobileOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
 
+                {/* Mobile-only scroll logo (appears in header on scroll, hidden on desktop) */}
+                <div className="mobile-scroll-logo">
+                    <Link to="/" onClick={closeMobile}>
+                        <img
+                            src="/Recurso1.png"
+                            alt="479 Roofing Restoration"
+                            className="mobile-scroll-logo-img"
+                        />
+                    </Link>
+                </div>
+
                 <div className={`navbar-inner-container ${mobileOpen ? 'mobile-show' : ''}`}>
                     {/* Inner Logo (visible on scroll) */}
                     <div className="logo-container">
@@ -79,9 +90,7 @@ const Navbar = () => {
                             <ul className="nav-links">
                                 <li><Link to="/" onClick={closeMobile}>Home</Link></li>
                                 <li><Link to="/insurance-claim" onClick={closeMobile}>Insurance Claim</Link></li>
-
                                 <li><Link to="/roofing" onClick={closeMobile}>Roofing</Link></li>
-
                                 <li><Link to="/commercial-roofing" onClick={closeMobile}>Commercial Roofing</Link></li>
                                 <li><Link to="/financing" onClick={closeMobile}>Financing</Link></li>
                             </ul>

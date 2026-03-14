@@ -19,6 +19,12 @@ const Hero = () => {
 
             <div className="hero-content">
                 <div className="hero-text-container">
+                    {/* Mobile-only logo above headline */}
+                    <img
+                        src="/Recurso1.png"
+                        alt="479 Roofing Restoration"
+                        className="hero-mobile-logo"
+                    />
                     <h1 className="hero-title">
                         Everything you love lives under your roof. <br />
                         <span className="hero-highlight">Protect it with the best.</span>

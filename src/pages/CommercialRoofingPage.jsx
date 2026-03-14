@@ -93,11 +93,11 @@ const CommercialRoofingPage = () => {
                         <span>Commercial Roofing Solutions</span>
                     </div>
                     <h1 className="commercial-hero-headline">
-                        Engineered Protection<br />for Commercial Properties.
+                        Engineered Protection<br />for Rogers Commercial Properties.
                     </h1>
                     <p className="commercial-hero-subheadline">
-                        From retail spaces to industrial complexes, we deliver roofing systems built
-                        for durability, energy efficiency, and full code compliance across Arkansas.
+                        From retail spaces to industrial complexes in Northwest Arkansas, we deliver roofing systems built
+                        for durability, energy efficiency, and full code compliance.
                     </p>
                     <a href="/roof-inspection" className="btn-hero-primary">
                         Schedule a Free Site Assessment <ArrowRight size={20} />

@@ -94,12 +94,12 @@
     font-size: 1.05rem;
     text-decoration: none;
     transition: all 0.35s ease;
-    box-shadow: 0 0 24px rgba(0, 229, 255, 0.25), 0 4px 12px rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 24px rgba(0, 229, 255, 0.25), 0 4px 12px rgba(39, 168, 68, 0.25);
 }
 
 .solar-hero-cta:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0 36px rgba(0, 229, 255, 0.4), 0 12px 24px -4px rgba(0, 123, 255, 0.35);
+    box-shadow: 0 0 36px rgba(0, 229, 255, 0.4), 0 12px 24px -4px rgba(39, 168, 68, 0.35);
     color: white;
 }
 
@@ -379,14 +379,14 @@
     width: 56px;
     height: 56px;
     border-radius: 12px;
-    background: linear-gradient(135deg, var(--electric-cyan-dim), rgba(0, 123, 255, 0.08));
+    background: linear-gradient(135deg, var(--electric-cyan-dim), rgba(39, 168, 68, 0.08));
     display: flex;
     align-items: center;
     justify-content: center;
     color: #27A844;
     margin: 0 auto 16px;
     transition: all 0.35s ease;
-    border: 1px solid rgba(0, 123, 255, 0.12);
+    border: 1px solid rgba(39, 168, 68, 0.12);
 }
 
 .process-step-card:hover .step-icon-wrapper {
@@ -583,12 +583,12 @@
     font-size: 1.15rem;
     text-decoration: none;
     transition: all 0.35s ease;
-    box-shadow: 0 0 30px rgba(0, 229, 255, 0.25), 0 8px 20px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.25), 0 8px 20px rgba(39, 168, 68, 0.3);
 }
 
 .solar-final-cta-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0 45px rgba(0, 229, 255, 0.4), 0 16px 32px -4px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 0 45px rgba(0, 229, 255, 0.4), 0 16px 32px -4px rgba(39, 168, 68, 0.4);
     color: white;
 }
 

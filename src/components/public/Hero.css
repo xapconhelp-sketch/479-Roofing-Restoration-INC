@@ -75,6 +75,11 @@
     /* Hide mobile logo on desktop */
 }
 
+/* Hero mobile logo - hidden on desktop, shown on mobile/tablet */
+.hero-mobile-logo {
+    display: none; /* Hidden by default on desktop */
+}
+
 .hero-label {
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -178,6 +183,15 @@
         margin-left: 0;
         max-width: 100%;
         padding: 0 16px;
+    }
+
+    /* Show the hero logo above the headline on tablet/mobile */
+    .hero-mobile-logo {
+        display: block;
+        width: 55%;
+        max-width: 280px;
+        margin: 0 auto 24px auto;
+        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
     }
 
     .hero-actions {

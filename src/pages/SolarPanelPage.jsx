@@ -65,10 +65,10 @@ const SolarPanelPage = () => {
                         <span>479 Roofing Restoration Solar Solutions</span>
                     </div>
                     <h1 className="solar-hero-headline">
-                        Energy Independence,<br />Engineered by Roofers.
+                        Energy Independence in NWA,<br />Engineered by Roofers.
                     </h1>
                     <p className="solar-hero-subheadline">
-                        479 Roofing Restoration delivers integrated solar systems designed to protect your
+                        479 Roofing Restoration delivers integrated solar systems to Rogers and surrounding areas. Designed to protect your
                         roof while powering your life. Premium installation. Zero leaks. Guaranteed.
                     </p>
                     <a href="/roof-inspection" className="solar-hero-cta">
