@@ -30,7 +30,7 @@ const Hero = () => {
                         <span className="hero-highlight">Protect it with the best.</span>
                     </h1>
                     <p className="hero-description">
-                        Experience matters. Quality covers. The best warranty in AR.
+                        Experienced Manners, Quality Covers, The Best Warranty in Arkansas & OK
                     </p>
 
                     <div className="hero-actions">

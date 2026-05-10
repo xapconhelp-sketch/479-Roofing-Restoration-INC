@@ -194,18 +194,14 @@
 .oklahoma-badge {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    background: #27A844; /* Vibrant solid green */
-    border: 1px solid #1e8a35;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 15px rgba(39, 168, 68, 0.4);
-    letter-spacing: 0.5px;
+    gap: 6px;
+    color: #27A844;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(39, 168, 68, 0.3);
 }
 
 .badge-icon {
