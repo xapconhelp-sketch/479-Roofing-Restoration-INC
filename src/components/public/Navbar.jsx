@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowRight, ChevronDown, Search, Hammer, CloudLightning, Home, Image, Menu, X } from 'lucide-react';
+import { ArrowRight, ChevronDown, Search, Hammer, CloudLightning, Home, Image, Menu, X, Phone } from 'lucide-react';
 import { useContact } from '../../context/ContactContext';
 import LoginModal from '../auth/LoginModal';
 import './Navbar.css';
@@ -96,6 +96,10 @@ const Navbar = () => {
                             </ul>
 
                             <div className="nav-cta">
+                                <a href="tel:4792783764" className="nav-phone-link" onClick={closeMobile}>
+                                    <Phone size={18} />
+                                    <span>(479) 278-3764</span>
+                                </a>
                                 <button onClick={() => { openEmailModal(); closeMobile(); }} className="btn-login">
                                     Contact Us
                                 </button>

@@ -378,7 +378,37 @@
 
 /* Duplicates removed */
 
-/* Contact Button */
+/* Contact Button & CTA Area */
+.nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-phone-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-phone-link:hover {
+    color: #27A844;
+}
+
+.navbar-wrapper.scrolled .nav-phone-link {
+    color: #0f172a;
+}
+
+.navbar-wrapper.scrolled .nav-phone-link:hover {
+    color: #27A844;
+}
+
+/* "El botón "Contact Us" debe ser Azul (#27A844) con bordes redondeados mínimos (4px)" */
 /* "El botón "Contact Us" debe ser Azul (#27A844) con bordes redondeados mínimos (4px)" */
 .btn-login {
     background-color: #27A844;
@@ -598,6 +628,12 @@
 
     .nav-cta {
         margin-top: 16px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-phone-link {
+        color: #0f172a !important; /* Dark on mobile menu */
     }
 
     .btn-login {

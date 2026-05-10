@@ -16,8 +16,8 @@
 
 /* Left Block: Information */
 .footer-info {
-    flex: 1;
-    min-width: 300px;
+    flex: 0.8;
+    min-width: 250px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 2rem;
@@ -103,28 +103,118 @@
     color: #FFFFFF;
 }
 
+/* Contact Column Stylish Card */
+.contact-column {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.centered-heading {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.horizontal-list li {
+    margin-bottom: 0;
+}
+
 .contact-icon {
     flex-shrink: 0;
     margin-top: 2px;
 }
 
-/* Right Block: Map */
-.footer-map {
-    flex: 1;
+/* Right Block: Maps & Contact */
+.footer-right-block {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     min-width: 300px;
-    height: 300px;
-    /* Reduced height visually, or match content */
+}
+
+.footer-map {
+    width: 100%;
+    height: 250px; /* Adjusted for side-by-side */
+    display: flex;
+    flex-direction: row; /* Side by side */
+    gap: 15px;
 }
 
 .map-container {
-    width: 100%;
+    width: 50%;
     height: 100%;
     border-radius: 12px;
     overflow: hidden;
-    /* Map Filter: Dark Mode Effect */
+    position: relative;
+    border: 2px solid rgba(39, 168, 68, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
     filter: grayscale(1) invert(1) contrast(1.2);
-    /* Note: Inverting a map makes light roads dark, but also inverts branding colors. 
-       Usually this is the quick CSS way to get 'Dark Mode' maps without API styling. */
+}
+
+.map-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(39, 168, 68, 0.25);
+    border-color: #27A844;
+}
+
+.map-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #27A844;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    letter-spacing: 0.5px;
+    z-index: 10;
+}
+
+/* Oklahoma Badge */
+.oklahoma-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #27A844; /* Vibrant solid green */
+    border: 1px solid #1e8a35;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(39, 168, 68, 0.4);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.badge-icon {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
 }
 
 /* Footer Bottom */
@@ -155,9 +245,28 @@
         max-width: 100%;
     }
 
+    .footer-right-block {
+        width: 100%;
+    }
+
     .footer-map {
-        height: 220px;
-        min-width: 100%;
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .horizontal-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .centered-heading {
+        text-align: left;
     }
 
     .footer-heading {
