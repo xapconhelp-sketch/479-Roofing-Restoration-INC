@@ -30,7 +30,7 @@ const Hero = () => {
                         <span className="hero-highlight">Protect it with the best.</span>
                     </h1>
                     <p className="hero-description">
-                        Experienced Manners, Quality Covers, The Best Warranty in Arkansas & OK
+                        Experienced Manners, Quality Covers, The Best Warranty in Arkansas & Oklahoma
                     </p>
 
                     <div className="hero-actions">
