@@ -58,24 +58,24 @@ const Footer = () => {
                         <div className="footer-map">
                         <div className="map-container primary-map">
                             <iframe
-                                src="https://www.google.com/maps?q=1303+W+Sunset+Dr,Rogers,AR+72756&output=embed"
+                                src="https://maps.google.com/maps?q=72701,+Arkansas&output=embed"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
                                 loading="lazy"
-                                title="479 Roofing Restoration Rogers AR Location"
+                                title="479 Roofing Restoration Arkansas Location"
                             ></iframe>
                         </div>
                         <div className="map-container secondary-map">
                             <iframe
-                                src="https://www.google.com/maps?q=Oklahoma+City,OK+73122&output=embed"
+                                src="https://maps.google.com/maps?q=74101,+Oklahoma&output=embed"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
                                 loading="lazy"
-                                title="479 Roofing Restoration Oklahoma City Location"
+                                title="479 Roofing Restoration Oklahoma Location"
                             ></iframe>
                             <div className="map-badge">Now in OK!</div>
                         </div>
@@ -86,15 +86,15 @@ const Footer = () => {
                             <h3 className="footer-heading centered-heading">Contact</h3>
                             <ul className="contact-list horizontal-list">
                                 <li>
-                                    <a href="https://maps.google.com/?q=Rogers+AR+72756" target="_blank" rel="noopener noreferrer" className="contact-link">
+                                    <a href="https://maps.google.com/?q=72701+Arkansas" target="_blank" rel="noopener noreferrer" className="contact-link">
                                         <MapPin size={18} className="contact-icon" />
-                                        <span>Rogers, AR 72756</span>
+                                        <span>Arkansas, 72701</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://maps.google.com/?q=Oklahoma+City+OK+73122" target="_blank" rel="noopener noreferrer" className="contact-link">
+                                    <a href="https://maps.google.com/?q=74101+Oklahoma" target="_blank" rel="noopener noreferrer" className="contact-link">
                                         <MapPin size={18} className="contact-icon ok-icon" />
-                                        <span>Oklahoma City, OK 73122</span>
+                                        <span>Oklahoma, 74101</span>
                                     </a>
                                 </li>
                                 <li>
