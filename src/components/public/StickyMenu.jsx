@@ -64,11 +64,11 @@ const StickyMenu = () => {
                 <div className="sticky-menu-bar">
 
                     {/* Left Group */}
-                    <a href="https://wa.me/14792282193" target="_blank" rel="noopener noreferrer" className="sticky-menu-item" title="Chat with us">
+                    <a href="https://wa.me/14792783764" target="_blank" rel="noopener noreferrer" className="sticky-menu-item" title="Chat with us">
                         <WhatsAppIcon size={22} className="whatsapp-icon" />
                         <span>Chat</span>
                     </a>
-                    <a href="tel:4792282193" className="sticky-menu-item" title="Call us">
+                    <a href="tel:4792783764" className="sticky-menu-item" title="Call us">
                         <Phone size={22} />
                         <span>Call</span>
                     </a>
@@ -83,7 +83,7 @@ const StickyMenu = () => {
                     </div>
 
                     {/* Right Group */}
-                    <a href="sms:+14792282193"
+                    <a href="sms:+14792783764"
                         className="sticky-menu-item"
                         title="Send a Text">
                         <Smartphone size={22} />
